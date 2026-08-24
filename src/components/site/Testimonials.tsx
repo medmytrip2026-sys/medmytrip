@@ -18,7 +18,7 @@ export function Testimonials() {
         <SectionHeading
           eyebrow="Patient Stories"
           title={<>Real journeys, <span className="text-primary">real recoveries</span></>}
-          description="Hear from patients across Bangladesh who trusted us with their care in India."
+          description="Hear from patients around the world who trusted us with their care in India."
         />
       </Reveal>
 
@@ -44,7 +44,7 @@ export function Testimonials() {
                 <div className="ml-4 flex flex-col justify-center sm:ml-0 sm:mt-4 sm:items-center sm:text-center">
                   <p className="font-display text-base font-bold text-foreground">{t.name}</p>
                   <p className="text-xs text-muted-foreground">{t.country}</p>
-                  <div className="mt-1.5 flex items-center gap-0.5 text-secondary">
+                  <div className="mt-1.5 flex items-center gap-0.5 text-amber-500">
                     {[...Array(t.rating)].map((_, k) => (
                       <Star key={k} className="h-3.5 w-3.5 fill-current" />
                     ))}

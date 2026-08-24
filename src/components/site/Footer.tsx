@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, Mail, MapPin, Phone } from "lucide-react";
 import { contactInfo } from "@/data/site";
-import logoIcon from "@/assets/healthbridgein-icon.png";
+import { MedMyTripLogo } from "./MedMyTripLogo";
 
 const quick = [
   { label: "Home", href: "#home" },
@@ -19,33 +19,17 @@ const legal = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-foreground text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,118,110,0.35),transparent_55%)]" />
+    <footer className="relative overflow-hidden bg-[#001e3d] text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,102,204,0.2),transparent_55%)]" />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="grid h-12 w-12 place-items-center rounded-xl bg-white/95 p-1 shadow-soft">
-                <img
-                  src={logoIcon.src}
-                  alt="HealthBridgeIn logo"
-                  className="h-full w-full object-contain"
-                />
-              </span>
-              <div>
-                <p className="font-display text-lg font-extrabold">
-                  <span className="text-[#4ADE80]">Health</span>
-                  <span className="text-[#F39B1F]">Bridge</span>
-                  <span className="text-[#4ADE80]">In</span>
-                </p>
-                <p className="text-[10px] uppercase tracking-[0.16em] text-white/60">
-                  Bangladesh · India
-                </p>
-              </div>
+            <div className="flex items-center bg-white rounded-lg p-2 max-w-fit">
+              <MedMyTripLogo className="h-10 w-[200px]" />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              Connecting Bangladeshi patients with India's leading hospitals, doctors and end-to-end
-              medical travel support.
+              Connecting patients worldwide — across English-speaking and French-speaking countries —
+              with India's leading hospitals, doctors and end-to-end medical travel support.
             </p>
             <div className="mt-5 flex gap-2">
               {[Facebook, Instagram, Twitter, Linkedin, Youtube].map((I, k) => (
@@ -53,7 +37,7 @@ export function Footer() {
                   key={k}
                   href="#"
                   aria-label="Social link"
-                  className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/80 transition-all hover:border-primary-glow hover:bg-primary hover:text-white"
+                  className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/80 transition-all hover:border-[#00A3E0] hover:bg-[#0066CC] hover:text-white"
                 >
                   <I className="h-4 w-4" />
                 </a>
@@ -66,7 +50,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               {quick.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} className="transition-colors hover:text-primary-glow">
+                  <a href={l.href} className="transition-colors hover:text-[#00A3E0]">
                     {l.label}
                   </a>
                 </li>
@@ -79,7 +63,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               {legal.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} className="transition-colors hover:text-primary-glow">
+                  <a href={l.href} className="transition-colors hover:text-[#00A3E0]">
                     {l.label}
                   </a>
                 </li>
@@ -91,7 +75,7 @@ export function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-white">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary-glow" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#00A3E0]" />
                 <span>
                   {contactInfo.bangladesh1}
                   <br />
@@ -99,11 +83,11 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary-glow" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#00A3E0]" />
                 <span>{contactInfo.email}</span>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary-glow" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#00A3E0]" />
                 <span>{contactInfo.address}</span>
               </li>
             </ul>
@@ -111,8 +95,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} HealthBridgeIn. All rights reserved.</p>
-          <p>Made with care for patients across Bangladesh 🇧🇩 &amp; India 🇮🇳</p>
+          <p>© {new Date().getFullYear()} MedMyTrip. All rights reserved.</p>
+          <p>Made with care for patients around the world &amp; India 🇮🇳</p>
         </div>
       </div>
     </footer>

@@ -26,10 +26,10 @@ export function Partners() {
           eyebrow="Our Official Partners"
           title={
             <>
-              Trusted partners in <span className="text-primary">Bangladesh</span>
+              Our trusted <span className="text-primary">regional partners</span>
             </>
           }
-          description="Reach out to our official representatives in Dhaka for on-ground assistance with reports, consultations and travel."
+          description="Reach out to our official regional representatives for on-ground assistance with reports, consultations and travel."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

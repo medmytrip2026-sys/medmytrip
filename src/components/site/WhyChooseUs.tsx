@@ -12,8 +12,8 @@ export function WhyChooseUs() {
       <Reveal>
         <SectionHeading
           eyebrow="Why Choose Us"
-          title={<>The trusted bridge between <span className="text-primary">Bangladesh &amp; India</span></>}
-          description="Personalised, Bangla-first medical concierge — from your first WhatsApp message to a safe return home."
+          title={<>Your trusted bridge to <span className="text-primary">world-class care in India</span></>}
+          description="A personalised medical concierge for English and French-speaking patients — from your first WhatsApp message to a safe return home."
         />
       </Reveal>
 

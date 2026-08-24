@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
 import "../styles.css";
 
 const inter = Inter({
@@ -15,22 +15,29 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-ticket",
+  weight: ["500", "600"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "HealthBridgeIn — Medical Treatment in India for Bangladeshi Patients",
-  description: "HealthBridgeIn connects Bangladeshi patients to India's top hospitals and doctors. Bangla support, visa assistance, airport pickup and transparent cost estimates.",
-  keywords: ["medical tourism India", "Bangladesh patients", "India hospitals", "medical visa India", "HealthBridgeIn"],
+  title: "MedMyTrip — Medical Treatment in India for International Patients",
+  description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
+  keywords: ["medical tourism India", "international patients", "medical tourism for English speaking countries", "medical tourism for French speaking countries", "India hospitals", "medical visa India", "MedMyTrip"],
   metadataBase: new URL("https://healthbridge.in"),
   openGraph: {
-    title: "HealthBridgeIn — Medical Treatment in India for Bangladeshi Patients",
-    description: "HealthBridgeIn connects Bangladeshi patients to India's top hospitals and doctors. Bangla support, visa assistance, airport pickup and transparent cost estimates.",
+    title: "MedMyTrip — Medical Treatment in India for International Patients",
+    description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
     url: "/",
-    siteName: "HealthBridgeIn",
+    siteName: "MedMyTrip",
     images: [
       {
         url: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9f3f0933-ba7c-4c70-93c1-92906cf4031d/id-preview-47e7a4ac--378b0401-c324-4b40-9a54-2f232ed9ec10.lovable.app-1783948303023.png",
         width: 1200,
         height: 630,
-        alt: "HealthBridgeIn — Medical Treatment in India",
+        alt: "MedMyTrip — Medical Treatment in India",
       },
     ],
     type: "website",
@@ -38,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HealthBridgeIn — Medical Treatment in India for Bangladeshi Patients",
-    description: "HealthBridgeIn connects Bangladeshi patients to India's top hospitals and doctors. Bangla support, visa assistance, airport pickup and transparent cost estimates.",
+    title: "MedMyTrip — Medical Treatment in India for International Patients",
+    description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
     images: ["https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9f3f0933-ba7c-4c70-93c1-92906cf4031d/id-preview-47e7a4ac--378b0401-c324-4b40-9a54-2f232ed9ec10.lovable.app-1783948303023.png"],
   },
   icons: {
@@ -59,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${plusJakartaSans.variable} antialiased`}>
+      <body className={`${inter.variable} ${plusJakartaSans.variable} ${ibmPlexMono.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -34,11 +34,11 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "HealthBridgeIn",
-    "alternateName": "Health Bridge In",
+    "name": "MedMyTrip",
+    "alternateName": "Med My Trip",
     "url": "https://healthbridge.in",
     "logo": "https://healthbridge.in/favicon.ico",
-    "description": "HealthBridgeIn connects Bangladeshi patients to India's top hospitals and doctors. Bangla support, visa assistance, airport pickup and transparent cost estimates.",
+    "description": "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": contactInfo.address.split(",")[0],

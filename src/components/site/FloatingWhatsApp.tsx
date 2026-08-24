@@ -20,7 +20,6 @@ export function FloatingWhatsApp() {
         <MessageCircle className="h-5 w-5" />
         <span className="absolute inset-0 animate-ping rounded-full bg-white/30" />
       </span>
-      <span className="hidden sm:inline">Chat on WhatsApp</span>
     </motion.a>
   );
 }

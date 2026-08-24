@@ -1281,7 +1281,7 @@ export const services = [
   },
   {
     title: "Flight Booking",
-    description: "Discounted medical fares on Dhaka–Delhi, Kolkata and Chennai routes.",
+    description: "Discounted medical fares on international routes into Delhi, Kolkata and Chennai.",
     image:
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop&q=70",
     icon: "PlaneTakeoff",
@@ -1302,7 +1302,7 @@ export const services = [
   },
   {
     title: "Language Assistance",
-    description: "Dedicated Bangla-speaking coordinators throughout your medical journey.",
+    description: "Dedicated English and French-speaking coordinators throughout your medical journey.",
     image:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&auto=format&fit=crop&q=70",
     icon: "Languages",
@@ -1311,8 +1311,8 @@ export const services = [
 
 export const whyChooseUs = [
   {
-    title: "Bangla Support Team",
-    description: "Dedicated Bangla-speaking coordinators available around the clock.",
+    title: "Multilingual Support Team",
+    description: "Dedicated English and French-speaking coordinators available around the clock.",
     icon: "MessagesSquare",
   },
   {
@@ -1346,79 +1346,91 @@ export const steps = [
   {
     title: "Share Medical Reports",
     description: "Send your reports via WhatsApp or upload securely on our portal.",
+    icon: "FileText",
+    code: "RPT",
   },
   {
     title: "Receive Doctor Opinion",
     description: "Get a written second opinion from top Indian specialists within 48 hours.",
+    icon: "Stethoscope",
+    code: "OPN",
   },
   {
     title: "Get Cost Estimate",
     description: "Receive transparent, itemised treatment estimates from multiple hospitals.",
+    icon: "Receipt",
+    code: "EST",
   },
   {
     title: "Medical Visa Assistance",
     description: "We prepare your invitation letter and guide you through the visa process.",
+    icon: "Stamp",
+    code: "VISA",
   },
   {
     title: "Travel to India",
     description: "Airport pickup, SIM card, currency exchange and accommodation handled.",
+    icon: "Plane",
+    code: "TRV",
   },
   {
     title: "Treatment & Return Home",
-    description: "Bangla support at every step until you are safely back home in Bangladesh.",
+    description: "Multilingual support at every step until you are safely back home.",
+    icon: "HeartPulse",
+    code: "HOME",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Md. Anwar Hossain",
-    country: "Dhaka, Bangladesh",
+    name: "Sarah Mitchell",
+    country: "London, United Kingdom",
     treatment: "Cardiac Bypass Surgery",
     rating: 5,
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=70",
     quote:
-      "From the moment I sent my reports on WhatsApp until I returned home, HealthBridgeIn handled everything. The Bangla-speaking coordinator felt like family.",
+      "From the moment I sent my reports on WhatsApp until I returned home, MedMyTrip handled everything. My coordinator felt like family throughout the entire journey.",
   },
   {
-    name: "Rehana Begum",
-    country: "Chattogram, Bangladesh",
+    name: "Grace Okafor",
+    country: "Lagos, Nigeria",
     treatment: "Bone Marrow Transplant",
     rating: 5,
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=70",
     quote:
-      "The doctors at Medanta gave my daughter a new life. HealthBridgeIn arranged everything — visa, stay, translator. Highly recommended.",
+      "The doctors at Medanta gave my daughter a new life. MedMyTrip arranged everything — visa, stay, translator. Highly recommended.",
   },
   {
-    name: "Kamrul Islam",
-    country: "Sylhet, Bangladesh",
+    name: "Jean-Baptiste Kouassi",
+    country: "Abidjan, Côte d'Ivoire",
     treatment: "Prostate Cancer Treatment",
     rating: 5,
     image:
       "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&auto=format&fit=crop&q=70",
     quote:
-      "Transparent pricing, no hidden costs and world-class care in Chennai. I am forever grateful for their support during a difficult time.",
+      "Transparent pricing, no hidden costs and world-class care in Chennai. I am forever grateful for their French-speaking support during a difficult time.",
   },
   {
-    name: "Nusrat Jahan",
-    country: "Khulna, Bangladesh",
+    name: "Aminata Diallo",
+    country: "Dakar, Senegal",
     treatment: "IVF Treatment",
     rating: 5,
     image:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=70",
     quote:
-      "After years of struggle we finally became parents thanks to Dr. Ananya and the team. HealthBridgeIn made a foreign country feel like home.",
+      "After years of struggle we finally became parents thanks to Dr. Ananya and the team. MedMyTrip made a foreign country feel like home.",
   },
   {
-    name: "Shafiqur Rahman",
-    country: "Rajshahi, Bangladesh",
+    name: "Michael Thompson",
+    country: "Toronto, Canada",
     treatment: "Orthopaedic Surgery",
     rating: 5,
     image:
       "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&auto=format&fit=crop&q=70",
     quote:
-      "I could walk again within weeks. Everything from airport pickup to follow-up was seamless. Truly a bridge between Bangladesh and India.",
+      "I could walk again within weeks. Everything from airport pickup to follow-up was seamless. Truly a bridge between my home country and India.",
   },
 ];
 
@@ -1432,12 +1444,12 @@ export const faqs = [
     a: "Yes. We provide a visa invitation letter from the treating hospital and guide you through the Indian medical visa (MED) and attendant visa (MED-X) process.",
   },
   {
-    q: "Will there be someone who speaks Bangla?",
-    a: "Absolutely. Every patient is assigned a dedicated Bangla-speaking coordinator who accompanies you from arrival until departure.",
+    q: "Will there be someone who speaks my language?",
+    a: "Absolutely. Every patient is assigned a dedicated English or French-speaking coordinator who accompanies you from arrival until departure.",
   },
   {
-    q: "How much does treatment in India cost compared to Bangladesh?",
-    a: "Costs are highly competitive — often 30–60% lower than western countries while offering equivalent quality. Every estimate is transparent and itemised.",
+    q: "How much does treatment in India cost compared to my home country?",
+    a: "Costs are highly competitive — often 30–60% lower than in Western countries while offering equivalent quality. Every estimate is transparent and itemised.",
   },
   {
     q: "Which hospitals do you work with?",

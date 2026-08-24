@@ -8,10 +8,10 @@ import { ArrowLeft } from "lucide-react";
 import { hospitals as allHospitals } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Partner Hospitals — HealthBridgeIn",
+  title: "Partner Hospitals — MedMyTrip",
   description: "Explore JCI and NABH accredited partner hospitals across India. Filter by city, specialty and accreditation.",
   openGraph: {
-    title: "Partner Hospitals — HealthBridgeIn",
+    title: "Partner Hospitals — MedMyTrip",
     description: "Explore JCI and NABH accredited partner hospitals across India. Filter by city, specialty and accreditation.",
   },
 };
@@ -45,7 +45,7 @@ export default function HospitalsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="pt-24">
+      <main>
         <section className="relative isolate overflow-hidden bg-gradient-to-br from-primary via-primary to-accent py-20 text-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_55%)]" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

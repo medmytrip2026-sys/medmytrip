@@ -14,7 +14,7 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
-    country: "Bangladesh",
+    country: "",
     phone: "",
     email: "",
     treatment: "",
@@ -49,7 +49,7 @@ export function Contact() {
 
         setForm({
           name: "",
-          country: "Bangladesh",
+          country: "",
           phone: "",
           email: "",
           treatment: "",
@@ -98,13 +98,13 @@ export function Contact() {
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <Field label="Full Name" required>
-              <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputCls} placeholder="Md. Rahim Uddin" />
+              <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputCls} placeholder="John Smith" />
             </Field>
             <Field label="Country">
-              <input value={form.country} onChange={(e) => setForm({ ...form, country: e.target.value })} className={inputCls} placeholder="Bangladesh" />
+              <input value={form.country} onChange={(e) => setForm({ ...form, country: e.target.value })} className={inputCls} placeholder="e.g. United Kingdom, Canada, France" />
             </Field>
             <Field label="Phone / WhatsApp" required>
-              <input required type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputCls} placeholder="+8801XXXXXXXXX" />
+              <input required type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputCls} placeholder="+1 XXX XXX XXXX" />
             </Field>
             <Field label="Email">
               <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputCls} placeholder="you@email.com" />

@@ -8,10 +8,10 @@ import { ArrowLeft } from "lucide-react";
 import { doctors as allDoctors } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Our Doctors — HealthBridgeIn",
-  description: "Browse India's most trusted specialists. Filter by specialty, city and hospital, and book an appointment through HealthBridgeIn.",
+  title: "Our Doctors — MedMyTrip",
+  description: "Browse India's most trusted specialists. Filter by specialty, city and hospital, and book an appointment through MedMyTrip.",
   openGraph: {
-    title: "Our Doctors — HealthBridgeIn",
+    title: "Our Doctors — MedMyTrip",
     description: "Browse and filter India's most trusted specialists — cardiology, oncology, neurology, orthopaedics, IVF and more.",
   },
 };
@@ -50,7 +50,7 @@ export default function DoctorsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="pt-24">
+      <main>
         <section className="relative isolate overflow-hidden bg-gradient-to-br from-primary via-primary to-accent py-20 text-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_55%)]" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

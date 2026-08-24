@@ -16,7 +16,7 @@ export function FAQ() {
           <SectionHeading
             eyebrow="FAQ"
             title={<>Answers to your <span className="text-primary">most common questions</span></>}
-            description="Still unsure? WhatsApp us anytime for a personal response in Bangla."
+            description="Still unsure? WhatsApp us anytime for a personal response in English or French."
           />
         </Reveal>
         <div className="mt-12 space-y-3">
