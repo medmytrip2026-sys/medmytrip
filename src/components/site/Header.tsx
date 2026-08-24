@@ -16,6 +16,7 @@ const links: NavLink[] = [
   { label: "Treatments", href: "/#treatments" },
   { label: "Doctors", to: "/doctors" },
   { label: "Hospitals", to: "/hospitals" },
+  { label: "Blog", to: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
 

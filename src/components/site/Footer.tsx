@@ -9,6 +9,7 @@ const quick = [
   { label: "Treatments", href: "#treatments" },
   { label: "Doctors", href: "#doctors" },
   { label: "Hospitals", href: "#hospitals" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const legal = [
