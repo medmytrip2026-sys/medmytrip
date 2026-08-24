@@ -1478,12 +1478,10 @@ export const faqs = [
 ];
 
 export const contactInfo = {
-  whatsappIndia: "918084529228",
+  whatsappIndia: "917909044706",
   whatsappUrl:
-    "https://wa.me/918084529228?text=Hello%20HealthBridgeIn%2C%20I%20would%20like%20to%20know%20more%20about%20treatment%20in%20India.",
-  whatsappKolkata: "+91 86971 53457",
-  bangladesh1: "+8801781419252",
-  bangladesh2: "+8801962659355",
-  email: "hb.support.in@gmail.com",
-  address: "Near Madhubani Medical College, Madhubani, Bihar 847231",
+    "https://wa.me/917909044706?text=Hello%20MedMyTrip%2C%20I%20would%20like%20to%20know%20more%20about%20treatment%20in%20India.",
+  phone: "+91 7909044706",
+  email: "medmytripinfo@gmail.com",
+  address: "B-23 Okhla Vihar, New Delhi - 110025",
 };

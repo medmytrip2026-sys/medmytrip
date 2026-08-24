@@ -76,11 +76,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#00A3E0]" />
-                <span>
-                  {contactInfo.bangladesh1}
-                  <br />
-                  {contactInfo.whatsappIndia}
-                </span>
+                <span>{contactInfo.phone}</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#00A3E0]" />

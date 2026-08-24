@@ -13,7 +13,6 @@ import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
-import { Partners } from "@/components/site/Partners";
 import { contactInfo } from "@/data/site";
 
 function ViewAllLink({ href, label }: { href: "/doctors" | "/hospitals"; label: string }) {
@@ -42,9 +41,9 @@ export default function Home() {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": contactInfo.address.split(",")[0],
-      "addressLocality": "Madhubani",
-      "addressRegion": "Bihar",
-      "postalCode": "847231",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110025",
       "addressCountry": "IN"
     },
     "contactPoint": [
@@ -53,20 +52,6 @@ export default function Home() {
         "telephone": `+${contactInfo.whatsappIndia}`,
         "contactType": "WhatsApp Support India",
         "availableLanguage": ["English", "Bengali", "Hindi"]
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": contactInfo.bangladesh1,
-        "contactType": "Customer Support Bangladesh Office 1",
-        "areaServed": "BD",
-        "availableLanguage": ["Bengali", "English"]
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": contactInfo.bangladesh2,
-        "contactType": "Customer Support Bangladesh Office 2",
-        "areaServed": "BD",
-        "availableLanguage": ["Bengali", "English"]
       }
     ]
   };
@@ -92,7 +77,6 @@ export default function Home() {
           <div className="h-16" />
         </div>
         <Testimonials />
-        <Partners />
         <FAQ />
         <Contact />
       </main>

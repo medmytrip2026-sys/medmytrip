@@ -40,11 +40,11 @@ export function Header() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="flex items-center gap-5">
             <a
-              href={`tel:${contactInfo.bangladesh1}`}
+              href={`tel:${contactInfo.phone}`}
               className="inline-flex items-center gap-1.5 transition-colors hover:text-white"
             >
               <Phone className="h-3 w-3" />
-              {contactInfo.bangladesh1}
+              {contactInfo.phone}
             </a>
             <a
               href={`mailto:${contactInfo.email}`}

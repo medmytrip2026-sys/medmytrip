@@ -69,10 +69,8 @@ export function Contact() {
   };
 
   const details = [
-    { icon: MessageCircle, label: "WhatsApp India", value: contactInfo.whatsappIndia, href: `https://wa.me/${contactInfo.whatsappIndia.replace(/[^0-9]/g, "")}`, accent: "whatsapp" },
-    { icon: MessageCircle, label: "WhatsApp Kolkata", value: contactInfo.whatsappKolkata, href: `https://wa.me/${contactInfo.whatsappKolkata.replace(/[^0-9]/g, "")}`, accent: "whatsapp" },
-    { icon: Phone, label: "Bangladesh", value: contactInfo.bangladesh1, href: `tel:${contactInfo.bangladesh1}` },
-    { icon: Phone, label: "Bangladesh", value: contactInfo.bangladesh2, href: `tel:${contactInfo.bangladesh2}` },
+    { icon: MessageCircle, label: "WhatsApp", value: contactInfo.phone, href: `https://wa.me/${contactInfo.whatsappIndia}`, accent: "whatsapp" },
+    { icon: Phone, label: "Phone", value: contactInfo.phone, href: `tel:${contactInfo.phone}` },
     { icon: Mail, label: "Email", value: contactInfo.email, href: `mailto:${contactInfo.email}` },
     { icon: MapPin, label: "Office Address", value: contactInfo.address },
   ];
@@ -187,7 +185,7 @@ export function Contact() {
           <div className="overflow-hidden rounded-3xl border border-border shadow-soft">
             <iframe
               title="Office Location"
-              src="https://www.google.com/maps?q=Madhubani+Medical+College+Bihar&output=embed"
+              src="https://www.google.com/maps?q=B-23+Okhla+Vihar+New+Delhi+110025&output=embed"
               loading="lazy"
               className="h-64 w-full"
               referrerPolicy="no-referrer-when-downgrade"
