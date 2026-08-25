@@ -1436,44 +1436,36 @@ export const testimonials = [
 
 export const faqs = [
   {
-    q: "How do I start the medical treatment process in India?",
-    a: "Simply send us your medical reports via WhatsApp or our contact form. Our medical team reviews them and connects you with the right specialist within 24–48 hours.",
+    q: "What is medical tourism and why do patients choose India?",
+    a: "Medical tourism means travelling to another country for treatment. Patients often consider India for its range of specialist hospitals, the availability of English-speaking clinicians, and treatment costs that are frequently lower than in many other countries. Whether it is the right choice depends on your diagnosis, your budget and how far you can travel, so it is worth comparing options before deciding.",
   },
   {
-    q: "Do you provide help with the medical visa?",
-    a: "Yes. We provide a visa invitation letter from the treating hospital and guide you through the Indian medical visa (MED) and attendant visa (MED-X) process.",
+    q: "How does MedMyTrip help me plan my treatment?",
+    a: "We act as your coordinator from first enquiry to follow-up. We review the reports you share, help you shortlist suitable hospitals and consultants, obtain indicative cost estimates, and assist with visa documentation, travel and accommodation. While you are in India we stay in contact and help with admission, discharge and onward arrangements.",
   },
   {
-    q: "Will there be someone who speaks my language?",
-    a: "Absolutely. Every patient is assigned a dedicated English or French-speaking coordinator who accompanies you from arrival until departure.",
+    q: "Are the hospitals and doctors verified?",
+    a: "For anyone we recommend, we share the consultant qualifications, registration details and the hospital accreditations, so you can check them independently before you commit. If you would prefer a different consultant or want a second opinion, tell us and we will arrange it. You are never obliged to accept the first option we suggest.",
   },
   {
-    q: "How much does treatment in India cost compared to my home country?",
-    a: "Costs are highly competitive — often 30–60% lower than in Western countries while offering equivalent quality. Every estimate is transparent and itemised.",
+    q: "What is included in a treatment package?",
+    a: "It varies by procedure and hospital. A package usually covers the specialist consultation, the procedure itself, the hospital stay and standard post-operative care. Items such as flights, accommodation for accompanying family, and treatment of unrelated conditions are normally separate. We set out what is and is not included in writing before you travel.",
   },
   {
-    q: "Which hospitals do you work with?",
-    a: "We partner with 75+ JCI and NABH accredited hospitals including Apollo, Fortis, Medanta, Manipal, Max and AMRI.",
+    q: "How do I get a medical visa?",
+    a: "A medical visa is applied for separately from a tourist visa. Applications generally require a letter from the treating hospital in India, your medical records or diagnosis, and evidence that you can meet the cost of treatment and stay. We provide the hospital documentation you need and guide you through the steps, but the decision rests with the Indian mission in your country. Requirements and processing times change, so confirm current rules before booking travel.",
   },
   {
-    q: "Do you help with accommodation for family members?",
-    a: "Yes, we arrange comfortable accommodation near the hospital ranging from budget guest houses to premium serviced apartments.",
+    q: "Is there support after I return home?",
+    a: "Yes. We can share your discharge summary and reports with your local doctor, help arrange follow-up consultations, and stay reachable for questions during your recovery. If your surgeon recommends a review, we can coordinate it remotely where that is appropriate, or help plan a return visit.",
   },
   {
-    q: "Is airport pickup included?",
-    a: "Complimentary airport pickup and drop is included for the patient and one attendant on all treatment packages.",
+    q: "Are MedMyTrip services free for patients?",
+    a: "Our coordination service is free to patients. You pay the hospital directly for your treatment, and we do not add a margin to hospital charges. If anything we arrange on your behalf carries a separate cost, such as accommodation or an interpreter, we will tell you the amount before you commit to it.",
   },
   {
-    q: "How long does it take to get a doctor's opinion?",
-    a: "Written second opinions are typically shared within 48 hours of receiving complete medical reports.",
-  },
-  {
-    q: "Can I get help booking flights or trains?",
-    a: "Yes. We assist with discounted medical fares on flights as well as Indian Railway tickets, including Tatkal bookings.",
-  },
-  {
-    q: "Is my information kept confidential?",
-    a: "All medical records and personal information are strictly confidential and shared only with the treating doctor with your consent.",
+    q: "How do I pay the hospital?",
+    a: "Payment is made directly to the hospital, usually on admission or in stages agreed beforehand. Most hospitals accept international bank transfer and many accept card payment. We confirm the accepted payment methods, the currency and the expected schedule in writing before you travel, so there are no surprises on arrival.",
   },
 ];
 
