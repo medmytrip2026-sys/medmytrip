@@ -1235,19 +1235,48 @@ export const hospitals: Hospital[] = [
   },
 ];
 
-export const treatments = [
-  { name: "Vitamin Deficiency", icon: "Pill" },
-  { name: "Urinary Problems", icon: "Droplets" },
-  { name: "Thyroid Disorders", icon: "Activity" },
-  { name: "Throat Cancer", icon: "Stethoscope" },
-  { name: "Shoulder Arthroscopy", icon: "Bone" },
-  { name: "Prostate Cancer", icon: "ShieldPlus" },
-  { name: "Bone Marrow Transplant", icon: "HeartPulse" },
-  { name: "PCOS", icon: "Flower2" },
-  { name: "Pain Management", icon: "Sparkles" },
-  { name: "Piles", icon: "CircleDot" },
-  { name: "Ovarian Cyst", icon: "Ribbon" },
-  { name: "Abdominal Tumour", icon: "ScanSearch" },
+export type TreatmentCategory = "Medical" | "Aesthetic" | "Wellness";
+
+export type Treatment = {
+  slug: string;
+  name: string;
+  icon: string;
+  category: TreatmentCategory;
+  rating: number;
+  startingPrice: number;
+  featured?: boolean;
+};
+
+export const treatments: Treatment[] = [
+  // Medical
+  { slug: "bariatric-surgery", name: "Bariatric Surgery", icon: "Scale", category: "Medical", rating: 95, startingPrice: 1500 },
+  { slug: "cardiac-sciences", name: "Cardiac Sciences", icon: "HeartPulse", category: "Medical", rating: 91, startingPrice: 500, featured: true },
+  { slug: "ent", name: "ENT", icon: "Ear", category: "Medical", rating: 90, startingPrice: 16000 },
+  { slug: "general-and-laparoscopic-surgery", name: "General And Laparoscopic Surgery", icon: "Slice", category: "Medical", rating: 90, startingPrice: 1800 },
+  { slug: "general-medicine", name: "General Medicine", icon: "Stethoscope", category: "Medical", rating: 91, startingPrice: 300 },
+  { slug: "haematology-and-bmt", name: "Haematology And BMT", icon: "Droplets", category: "Medical", rating: 91, startingPrice: 30000 },
+  { slug: "hepatology", name: "Hepatology", icon: "FlaskConical", category: "Medical", rating: 95, startingPrice: 11000 },
+  { slug: "infectious-disease", name: "Infectious Disease", icon: "Bug", category: "Medical", rating: 95, startingPrice: 400 },
+  { slug: "infertility", name: "Infertility", icon: "Flower2", category: "Medical", rating: 90, startingPrice: 2000, featured: true },
+  { slug: "nephrology-and-urology", name: "Nephrology And Urology", icon: "Droplet", category: "Medical", rating: 95, startingPrice: 2000 },
+  { slug: "neuro-sciences", name: "Neuro Sciences", icon: "BrainCircuit", category: "Medical", rating: 94, startingPrice: 5500 },
+  { slug: "neurology", name: "Neurology", icon: "Brain", category: "Medical", rating: 90, startingPrice: 2500, featured: true },
+  { slug: "obstetrics-and-gynecology", name: "Obstetrics And Gynecology", icon: "Venus", category: "Medical", rating: 91, startingPrice: 2500 },
+  { slug: "oncology", name: "Oncology", icon: "Ribbon", category: "Medical", rating: 94, startingPrice: 600, featured: true },
+  { slug: "ophthalmology", name: "Ophthalmology", icon: "Eye", category: "Medical", rating: 95, startingPrice: 800, featured: true },
+  { slug: "orthopedics", name: "Orthopedics", icon: "Bone", category: "Medical", rating: 94, startingPrice: 2200, featured: true },
+  { slug: "paediatrics-and-neonatology", name: "Paediatrics And Neonatology", icon: "Baby", category: "Medical", rating: 93, startingPrice: 500 },
+  { slug: "spine-surgery", name: "Spine Surgery", icon: "PersonStanding", category: "Medical", rating: 90, startingPrice: 4000 },
+  { slug: "transplant", name: "Transplant", icon: "Recycle", category: "Medical", rating: 94, startingPrice: 8000 },
+  { slug: "urology", name: "Urology", icon: "TestTube2", category: "Medical", rating: 93, startingPrice: 3000 },
+  { slug: "vascular-surgery", name: "Vascular Surgery", icon: "Activity", category: "Medical", rating: 94, startingPrice: 3000 },
+  // Aesthetic
+  { slug: "dental", name: "Dental", icon: "Smile", category: "Aesthetic", rating: 92, startingPrice: 100, featured: true },
+  { slug: "hair-transplant", name: "Hair Transplant", icon: "Sparkles", category: "Aesthetic", rating: 94, startingPrice: 2000, featured: true },
+  { slug: "plastic-aesthetic-and-reconstructive-surgery", name: "Plastic Aesthetic And Reconstructive Surgery", icon: "Sparkle", category: "Aesthetic", rating: 91, startingPrice: 200 },
+  // Wellness
+  { slug: "health-and-wellness", name: "Health And Wellness", icon: "HeartHandshake", category: "Wellness", rating: 91, startingPrice: 200 },
+  { slug: "neuro-wellness", name: "Neuro-Wellness", icon: "BrainCog", category: "Wellness", rating: 91, startingPrice: 200 },
 ];
 
 export const services = [

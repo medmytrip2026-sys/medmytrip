@@ -6,7 +6,7 @@ const quick = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Treatments", href: "#treatments" },
+  { label: "Treatments", href: "/treatments" },
   { label: "Doctors", href: "#doctors" },
   { label: "Hospitals", href: "#hospitals" },
   { label: "Blog", href: "/blog" },
