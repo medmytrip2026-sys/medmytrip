@@ -50,7 +50,11 @@ export const metadata: Metadata = {
     images: ["https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9f3f0933-ba7c-4c70-93c1-92906cf4031d/id-preview-47e7a4ac--378b0401-c324-4b40-9a54-2f232ed9ec10.lovable.app-1783948303023.png"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 

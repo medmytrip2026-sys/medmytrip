@@ -78,7 +78,7 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-start">
-            <MedMyTripLogo className="h-10 w-[200px]" />
+            <MedMyTripLogo className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
