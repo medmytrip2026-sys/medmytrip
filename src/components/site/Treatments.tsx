@@ -22,7 +22,7 @@ export function Treatments() {
           />
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {featured.map((t, i) => {
             const Icon = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[t.icon] ?? Icons.Activity;
             return (
@@ -36,14 +36,19 @@ export function Treatments() {
               >
                 <Link
                   href={`/treatments?category=${t.category}#${t.slug}`}
-                  className="group relative flex flex-col items-start gap-3 overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-soft transition-shadow hover:border-primary/30 hover:shadow-lift"
+                  className="group relative flex h-full flex-col items-start gap-4 overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all hover:border-primary/30 hover:shadow-lift"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 gradient-primary transition-transform duration-500 group-hover:scale-x-100" />
-                  <div className="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
-                    <Icon className="h-5 w-5" />
+                  <div className="grid h-14 w-14 place-items-center rounded-2xl gradient-primary text-white shadow-[0_8px_20px_-6px_rgba(0,59,113,0.45)] transition-transform duration-300 group-hover:scale-110">
+                    <Icon className="h-7 w-7" />
                   </div>
-                  <h3 className="text-sm font-bold leading-snug text-foreground sm:text-base">{t.name}</h3>
-                  <span className="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                  <div>
+                    <h3 className="text-sm font-bold leading-snug text-foreground sm:text-base">{t.name}</h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      From ${t.startingPrice.toLocaleString()}
+                    </p>
+                  </div>
+                  <span className="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-primary transition-transform duration-300 group-hover:translate-x-1">
                     Explore <ArrowRight className="h-3.5 w-3.5" />
                   </span>
                 </Link>
