@@ -43,7 +43,7 @@ export function TreatmentsExplorer() {
             <button
               key={c}
               onClick={() => setActive(c)}
-              className={`relative rounded-full px-5 py-2.5 text-sm font-bold transition-colors ${
+              className={`relative cursor-pointer rounded-full px-5 py-2.5 text-sm font-bold transition-colors ${
                 active === c ? "text-white" : "text-muted-foreground hover:text-primary"
               }`}
             >

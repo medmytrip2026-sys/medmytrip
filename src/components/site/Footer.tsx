@@ -33,14 +33,22 @@ export function Footer() {
               — with India's leading hospitals, doctors and end-to-end medical travel support.
             </p>
             <div className="mt-5 flex gap-2">
-              {[Facebook, Instagram, Twitter, Linkedin, Youtube].map((I, k) => (
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/share/1Db7zvL7hT/", label: "Facebook" },
+                { Icon: Instagram, href: "https://www.instagram.com/medmytrip?igsh=NzFyZ3c2bjBxN2Y=", label: "Instagram" },
+                { Icon: Twitter, href: "#", label: "Twitter" },
+                { Icon: Linkedin, href: "#", label: "LinkedIn" },
+                { Icon: Youtube, href: "#", label: "YouTube" },
+              ].map(({ Icon, href, label }, k) => (
                 <a
                   key={k}
-                  href="#"
-                  aria-label="Social link"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/80 transition-all hover:border-[#00A3E0] hover:bg-[#0066CC] hover:text-white"
                 >
-                  <I className="h-4 w-4" />
+                  <Icon className="h-4 w-4" />
                 </a>
               ))}
             </div>

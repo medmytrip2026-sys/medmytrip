@@ -16,7 +16,7 @@ import {
 import heroImg from "@/assets/hero_medmytrip.png";
 
 const stats = [
-  { icon: Building2, value: "9", label: "Partner Hospitals" },
+  { icon: Building2, value: "75+", label: "Partner Hospitals" },
   { icon: UserRound, value: "100+", label: "Expert Doctors" },
   { icon: Users, value: "1,000+", label: "Patients Assisted" },
 ];
