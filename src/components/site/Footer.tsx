@@ -34,8 +34,16 @@ export function Footer() {
             </p>
             <div className="mt-5 flex gap-2">
               {[
-                { Icon: Facebook, href: "https://www.facebook.com/share/1Db7zvL7hT/", label: "Facebook" },
-                { Icon: Instagram, href: "https://www.instagram.com/medmytrip?igsh=NzFyZ3c2bjBxN2Y=", label: "Instagram" },
+                {
+                  Icon: Facebook,
+                  href: "https://www.facebook.com/share/1Db7zvL7hT/",
+                  label: "Facebook",
+                },
+                {
+                  Icon: Instagram,
+                  href: "https://www.instagram.com/medmytrip?igsh=NzFyZ3c2bjBxN2Y=",
+                  label: "Instagram",
+                },
                 { Icon: Twitter, href: "#", label: "Twitter" },
                 { Icon: Linkedin, href: "#", label: "LinkedIn" },
                 { Icon: Youtube, href: "#", label: "YouTube" },
