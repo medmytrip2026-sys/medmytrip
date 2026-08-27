@@ -56,7 +56,7 @@ export default function HospitalsPage() {
               India's most <span className="text-secondary">accredited hospitals</span>
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-white/85">
-              75+ trusted partner hospitals — Apollo, Fortis, Medanta, Manipal, Max and AMRI. Filter by city, specialty or accreditation.
+              9 trusted partner hospitals — Medanta, Apollo, Fortis, Artemis, BLK-Max, Max Saket, Manipal, Amrita and Sanar International. Filter by city, specialty or accreditation.
             </p>
           </div>
         </section>

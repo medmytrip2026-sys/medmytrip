@@ -149,7 +149,7 @@ export function Doctors({
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((d, i) => (
           <motion.article
-            key={d.name}
+            key={d.id}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
@@ -188,9 +188,11 @@ export function Doctors({
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary shrink-0" /> {d.city}
                 </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
-                  <Award className="h-4 w-4 text-primary shrink-0" /> {d.experience} Experience
-                </div>
+                {d.experience && (
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
+                    <Award className="h-4 w-4 text-primary shrink-0" /> {d.experience} Experience
+                  </div>
+                )}
               </div>
               <div className="pt-2 flex gap-2">
                 <button
@@ -275,13 +277,15 @@ export function Doctors({
                           <p className="font-bold text-foreground">{selectedDoctor.city}</p>
                         </div>
                       </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <Award className="h-5 w-5 text-primary shrink-0" />
-                        <div>
-                          <p className="text-xs text-muted-foreground font-semibold">EXPERIENCE</p>
-                          <p className="font-bold text-foreground">{selectedDoctor.experience}</p>
+                      {selectedDoctor.experience && (
+                        <div className="flex items-center gap-3 text-sm">
+                          <Award className="h-5 w-5 text-primary shrink-0" />
+                          <div>
+                            <p className="text-xs text-muted-foreground font-semibold">EXPERIENCE</p>
+                            <p className="font-bold text-foreground">{selectedDoctor.experience}</p>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                     <a
                       href={handleWhatsAppBooking(
@@ -313,22 +317,24 @@ export function Doctors({
                     )}
 
                     {/* Qualifications */}
-                    <div className="space-y-2">
-                      <h4 className="text-sm font-extrabold uppercase tracking-widest text-primary flex items-center gap-2">
-                        <GraduationCap className="h-4 w-4" /> Qualifications
-                      </h4>
-                      <ul className="space-y-2.5">
-                        {selectedDoctor.qualifications.map((q, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-start gap-2.5 text-sm text-muted-foreground leading-snug"
-                          >
-                            <CheckCircle2 className="h-4.5 w-4.5 text-secondary shrink-0 mt-0.5" />
-                            <span>{q}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {selectedDoctor.qualifications && selectedDoctor.qualifications.length > 0 && (
+                      <div className="space-y-2">
+                        <h4 className="text-sm font-extrabold uppercase tracking-widest text-primary flex items-center gap-2">
+                          <GraduationCap className="h-4 w-4" /> Qualifications
+                        </h4>
+                        <ul className="space-y-2.5">
+                          {selectedDoctor.qualifications.map((q, idx) => (
+                            <li
+                              key={idx}
+                              className="flex items-start gap-2.5 text-sm text-muted-foreground leading-snug"
+                            >
+                              <CheckCircle2 className="h-4.5 w-4.5 text-secondary shrink-0 mt-0.5" />
+                              <span>{q}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
                     {/* Post Graduate Training */}
                     {selectedDoctor.training && selectedDoctor.training.length > 0 && (
