@@ -66,7 +66,33 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Chairman & Managing Director; Cardiovascular & CT Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-naresh-trehan.png",
+    about:
+      "Dr. Naresh Trehan is one of India’s most reputed and renowned Cardiovascular and Cardiothoracic Surgeons. He is the founder of Medanta – The Medicity, Gurgaon. He has more than 56 years of experience in his career in cardiac surgery, has performed more than 48,000 successful cardiac surgeries, and has expertise in advanced heart surgery. He continues to play an important role in advancing cardiac care in India.\n\nPrevious position: Director, Fortis Escorts Heart Institute, New Delhi.",
+    experience: "56+ years",
+    qualifications: [
+      "MBBS — King George's Medical University, Lucknow",
+      "Diploma — American Board of Surgery, USA",
+      "Fellowship — Royal Australasian College of Surgeons (2002)",
+    ],
+    procedures: [
+      "Cardiothoracic Surgery",
+      "Cardiovascular Surgery",
+      "Minimally Invasive Cardiac Surgery",
+      "Heart Transplant",
+    ],
+    awards: [
+      "Padma Shri (1991)",
+      "Padma Bhushan (2001)",
+      "Dr. B. C. Roy National Award (2005)",
+      "Lal Bahadur Shastri National Award",
+      "Lifetime Achievement Award (2002)",
+      "FRACS (Hon) (2002)",
+      "AMA Physician’s Recognition Award",
+      "Rotary Ratna Award (1996)",
+      "Rajiv Gandhi National Unity Award (1995)",
+      "India International Gold Award (1995)",
+    ],
   },
   {
     id: "dr-ashok-kumar-vaid-medanta-medical-oncology",
@@ -75,7 +101,23 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Chairman, Cancer Care; Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ashok-kumar-vaid.webp",
+    about:
+      "Dr. Ashok Kumar Vaid is Chairman of Medical Oncology, Haematology and Stem Cell Transplant at the Medanta Cancer Institute, Gurugram. Medanta states that he brings over 41 years of clinical experience, and that he started one of the largest stem cell transplant programmes in the private sector in north India.\n\nHis published clinical interests are cancer genomics, immunotherapy guidance and precision onco-therapeutics, alongside dendritic cell therapy and stem cell transplant. He treats organ-specific cancers, leukaemias, solid tumours and lymphomas.",
+    experience: "41+ years",
+    qualifications: ["D.M. (Medical Oncology)", "M.D. (General Medicine)", "M.B.B.S."],
+    procedures: [
+      "Organ-specific cancer treatment",
+      "Leukaemias",
+      "Solid tumours",
+      "Lymphomas",
+      "Stem cell transplant",
+      "Cancer genomics",
+      "Immunotherapy guidance",
+      "Precision onco-therapeutics",
+      "Dendritic cell therapy",
+    ],
+    awards: ["Padma Shri (2009)", "Chikitsa Shiromani Award (2007)"],
   },
   {
     id: "dr-sudhir-dubey-medanta-neurosurgery",
@@ -84,7 +126,23 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Senior Neurosurgery Specialist",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sudhir-dubey.png",
+    about:
+      "Dr. Sudhir Dubey is Chairman of Neurosciences at Medanta, Gurugram. His hospital profile records more than 10,000 neurosurgical operations over 22 years, and describes him as a pioneer and founder of minimally invasive spine surgery.\n\nHe took his MBBS at King George's Medical College, where he won the Sir Rupkishan Das Gold Medal in his final year, and trained in neurosurgery at the National Institute of Mental Health and Neurosciences, where he was awarded the Silver Jubilee Award. His surgical focus is endoportal brain surgery, endoscopic endonasal skull base surgery including pituitary surgery, and minimally invasive and percutaneous spine procedures.",
+    experience: "22+ years",
+    qualifications: ["M.Ch (Neurosurgery)", "M.B.B.S."],
+    procedures: [
+      "Endoportal brain surgery",
+      "Endoscopic endonasal skull base surgery",
+      "Pituitary surgery",
+      "Minimally invasive spine surgery",
+      "Percutaneous spine procedures",
+    ],
+    awards: [
+      "Young Neurosurgeon's Award, World Federation of Neurosurgical Societies — Medanta states he is the first and so far only recipient from India",
+      "International award for his work on brain tumours, Sydney, 2001",
+      "Silver Jubilee Award, NIMHANS",
+    ],
   },
   {
     id: "dr-sabhyata-gupta-medanta-gynae-oncology",
@@ -93,7 +151,28 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Chairperson, Gynaecology & Gynae Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sabhyata-gupta.png",
+    about:
+      "Dr. Sabhyata Gupta is Chairperson of Gynaecology and Gynae Oncology at Medanta, Gurugram. Medanta states that she is the first gynaecologist in India to have performed robotic gynaecological surgery for both cancerous and benign gynaecological conditions.\n\nHer training includes ovarian transplantation with Prof. Dror Meirow in Israel, cytoreductive surgery for ovarian cancer and peritoneal surface malignancies with HIPEC at Newcastle upon Tyne Hospitals in the UK, and an observership in gynaecological oncology at Tata Memorial Cancer Hospital, Mumbai. She is a postgraduate teacher registered with the National Board of Examinations and runs Medanta's DNB Gynae Oncology programme.",
+    qualifications: [
+      "M.D. (Gynaecology)",
+      "Diploma in Gynaecological Endoscopic Surgery",
+      "Training in robotic gynaecological surgery",
+      "Observership in uro-gynaecological oncology",
+    ],
+    procedures: [
+      "Gynae oncology",
+      "Robotic gynaecological surgery",
+      "Advanced gynae laparoscopy",
+      "Hysteroscopy",
+      "Colposcopy",
+      "Aesthetic and cosmetic gynaecology",
+    ],
+    workExperience: [
+      "International Gynaecological Cancer Society",
+      "European Society of Gynaecological Oncology",
+      "American Society of Clinical Oncology",
+    ],
   },
   {
     id: "dr-arvind-kumar-medanta-lung-thoracic-oncology",
@@ -102,7 +181,25 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Thoracic & Chest Surgery; Lung Cancer Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-arvind-kumar.jpg",
+    about:
+      "Dr. Arvind Kumar is Chairman of the Institute of Chest Surgery, Chest Onco-Surgery and Lung Transplantation at Medanta. His hospital profile records over 15,000 thoracic surgeries, of which more than 8,000 were done by minimally invasive (VATS) or robotic methods, and states that he pioneered robotic chest surgery in India in 2008.\n\nHe operates on surgical disease of the chest — the lungs, pleura, mediastinum, trachea, oesophagus, chest wall and diaphragm, including chest trauma. Medanta describes his experience in the surgical management of thymic disease such as myasthenia gravis and thymoma, including robotic thymectomy, as the largest in the country.\n\nHe completed his MBBS and MS at AIIMS, New Delhi, and served there on the faculty for 24 years, latterly as Professor of Surgery and Head of the Thoracic and Robotic Surgery Unit. Before joining Medanta he was Chairman of the Centre for Chest Surgery and Lung Transplantation and Director of the Institute of Robotic Surgery at Sir Ganga Ram Hospital, New Delhi, for eight years.",
+    qualifications: ["M.S. (Surgery), AIIMS New Delhi", "M.B.B.S., AIIMS New Delhi"],
+    procedures: [
+      "Lung cancer surgery",
+      "Robotic and VATS (key-hole) chest surgery",
+      "Robotic thymectomy for myasthenia gravis and thymoma",
+      "Oesophageal (food pipe) cancer surgery",
+      "Tracheal (windpipe) surgery",
+      "Mediastinal and chest wall surgery",
+      "Chest trauma",
+      "Lung transplantation",
+    ],
+    awards: [
+      "Dr. B. C. Roy National Award, Eminent Medical Person of the Year, 2014",
+      "National President, Association of Surgeons of India, 2019",
+      "Fakhr-e-Hind (Pride of the Nation) award",
+    ],
   },
   {
     id: "dr-gagan-gautam-medanta-uro-oncology",
@@ -111,7 +208,25 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Uro-Oncology / Urology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-gagan-gautam.jpg",
+    about:
+      "Dr. Gagan Gautam is Vice-Chairman of Uro-Oncology and Robotic Surgery at the Kidney and Urology Institute, Medanta, where he leads the robotic surgery team. His hospital profile records over two decades treating cancers of the urinary system and more than 1,500 robot-aided uro-oncological operations by him and his team.\n\nHis named areas are robotic prostatectomy for prostate cancer, robotic partial nephrectomy for kidney cancer and robotic cystectomy for bladder cancer, along with penile and testicular cancer and adrenal gland tumours. Medanta describes him as a proponent of evidence-based medicine whose team focuses on individualised counselling and treatment.",
+    experience: "20+ years",
+    qualifications: [
+      "Clinical Fellowship in Minimally Invasive Urology",
+      "M.Ch (Urology)",
+      "DNB (General Surgery)",
+      "M.S. (General Surgery)",
+      "M.B.B.S.",
+    ],
+    procedures: [
+      "Robotic prostatectomy for prostate cancer",
+      "Robotic partial nephrectomy for kidney cancer",
+      "Robotic cystectomy for bladder cancer",
+      "Penile cancer",
+      "Testicular cancer",
+      "Adrenal gland tumours",
+    ],
   },
   {
     id: "dr-mandip-ahuja-medanta-breast-cancer",
@@ -120,7 +235,9 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Breast Cancer / Breast Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-mandip-ahuja.webp",
+    about:
+      "Dr. Mandip Ahuja — Breast Cancer / Breast Surgery — practises at Medanta – The Medicity, Gurugram.",
   },
   {
     id: "dr-adarsh-chaudhary-medanta-gi-surgery-oncology",
@@ -129,7 +246,19 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "Chairman, Gastrosciences; GI & GI Cancer Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-adarsh-chaudhary.webp",
+    about:
+      "Dr. Adarsh Chaudhary is Chairman of Gastrosciences at Medanta. Trained in the UK and the USA, he has extensive experience in hepatobiliary and pancreatic surgery, and Medanta states that he has performed the highest number of Whipple's procedures in India.\n\nHe was instrumental in starting one of the first departments of surgical gastroenterology in India. His named areas are advanced upper and lower GI onco-surgery, surgery for pancreatic cancer and benign pancreatic disease, hepatobiliary cancer and biliary stricture, and bariatric and minimally invasive surgery.",
+    qualifications: ["FRCS", "M.S. (General Surgery)", "M.B.B.S."],
+    procedures: [
+      "Advanced upper and lower GI onco-surgery",
+      "Surgery for pancreatic cancer and benign pancreatic disease",
+      "Hepatobiliary cancer surgery",
+      "Biliary stricture surgery",
+      "Bariatric surgery",
+      "Minimally invasive surgery",
+    ],
+    fellowships: ["Fellow, Royal College of Surgeons, Edinburgh"],
   },
   {
     id: "dr-naresh-kumar-panda-medanta-ent-oncology",
@@ -138,7 +267,36 @@ export const doctors: Doctor[] = [
     hospital: "Medanta – The Medicity",
     city: "Gurgaon",
     designation: "ENT / Head & Neck Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-naresh-kumar-panda.webp",
+    about:
+      "Dr. Naresh Kumar Panda is Senior Director of the Department of ENT at Max Hospital, Mohali. Max Healthcare records 37 years as a consultant ENT surgeon at PGIMER, Chandigarh, 20 of them as Head of the Department, and notes that he is a former Dean Academic of PGIMER.\n\nHis published speciality interests are cochlear implantation and other otological procedures, head and neck surgery including thyroid and parotid surgery, endoscopic sinus surgery and transoral robotic surgery. Max records more than 600 cochlear implant operations over the last 20 years, and more than 425 publications in national and international journals.",
+    experience: "37+ years",
+    qualifications: [
+      "MBBS — MKCG Medical College, Orissa (1982)",
+      "MS (Otolaryngology) — PGIMER, Chandigarh (1987)",
+      "DNB (Otolaryngology) — National Board of Examinations, New Delhi (1987)",
+      "FRCS — Royal College of Surgeons of Edinburgh, UK (2000)",
+      "FICS — International College of Surgeons (2003)",
+      "FAMS — National Academy of Medical Sciences (2010)",
+      "MFSTEd — Faculty of Surgical Trainers, Royal College of Surgeons, UK (2020)",
+    ],
+    procedures: [
+      "Cochlear implantation and other otological procedures",
+      "Head and neck surgery, including thyroid and parotid surgery",
+      "Endoscopic sinus surgery",
+      "Transoral robotic surgery",
+    ],
+    workExperience: [
+      "Past President, Indian Academy of Otorhinolaryngology Head and Neck Surgery",
+      "Dean, Indian Academy of Otorhinolaryngology Head and Neck Surgery, since 2019",
+      "Honorary Fellow, Indian Academy of Otorhinolaryngology Head and Neck Surgery, since 2018",
+      "Fellow, Royal College of Surgeons of Edinburgh, and Member of its Faculty of Surgical Trainers",
+      "Fellow, International College of Surgeons",
+      "International Fellow, American Academy of Otolaryngology Head and Neck Surgery",
+      "Fellow, National Academy of Medical Sciences, New Delhi",
+      "Executive Member, IFOS; former Vice President, Cochlear Implant Group of India",
+      "Founder Member, Foundation for Head and Neck Oncology",
+    ],
   },
 
   // Indraprastha Apollo Hospitals, Delhi
@@ -149,7 +307,26 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Cardiology / Interventional Cardiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sanjay-tyagi.webp",
+    about:
+      "Dr. Sanjay Tyagi — published by Apollo as Dr. Prof. Sanjay Tyagi — is Clinical Director of Cardiology for the Apollo Hospitals Group's Northern Region and Senior Consultant in Cardiology at Indraprastha Apollo Hospitals, with 40 years in the field.\n\nApollo records over 300 research articles in peer-reviewed indexed journals and more than 40 chapters in leading textbooks of medicine and cardiology, with his research cited in major cardiology and cardiovascular surgery textbooks. He has been conferred the Fellowship of the Japanese Circulation Society, and Apollo credits him with a central role in adopting advanced cardiac interventions and managing complex cardiovascular disease.",
+    experience: "40+ years",
+    qualifications: [
+      "D.M. (Cardiology)",
+      "M.D. (Medicine)",
+      "FAMS",
+      "FESC",
+      "FRCP (Edinburgh)",
+      "FICA (USA)",
+      "Fellow, American College of Cardiology (USA)",
+      "Fellow, Japanese Circulation Society",
+    ],
+    procedures: [
+      "Interventional cardiology",
+      "Complex cardiac intervention",
+      "Management of complex cardiovascular conditions",
+    ],
+    awards: ["Dr. B. C. Roy National Award", "Fellowship of the Japanese Circulation Society"],
   },
   {
     id: "dr-harsh-dua-apollo-indraprastha-medical-oncology",
@@ -158,7 +335,29 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-harsh-dua.webp",
+    about:
+      "Dr. Harsh Dua is Senior Consultant in Medical Oncology and Haematology at Indraprastha Apollo Hospital, New Delhi, with over 46 years of experience, 25 of them at Apollo. Apollo describes him as one of the pioneers of the treatment of blood disorders and cancer chemotherapy in north India.\n\nHe took specialist training in haematology and oncology at University Hospital, Queen's Medical Centre, Nottingham. His practice covers chemotherapy, immunotherapy, targeted therapy, hormonal therapy and bone marrow transplant, with a focus on breast cancer management, head and neck tumours, solid tumour chemotherapy and stem cell transplantation.",
+    experience: "46+ years",
+    qualifications: [
+      "M.D.",
+      "M.B.B.S.",
+      "Specialist training in Haematology and Oncology, University Hospital, Queen's Medical Centre, Nottingham, England",
+    ],
+    procedures: [
+      "Chemotherapy",
+      "Immunotherapy",
+      "Targeted therapy",
+      "Hormonal therapy",
+      "Bone marrow transplant",
+      "Stem cell transplantation",
+      "Breast cancer management",
+      "Solid tumour chemotherapy",
+    ],
+    awards: [
+      "Delhi Medical Association award for work in oncology",
+      "Award from the Government of Nepal for work in oncology",
+    ],
   },
   {
     id: "dr-ravi-bhatia-apollo-indraprastha-neurosurgery",
@@ -167,7 +366,18 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Senior Neurosurgeon",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ravi-bhatia.webp",
+    about:
+      "Dr. Ravi Bhatia is a neurosurgeon at Apollo Hospitals, Delhi, with 48 years in the speciality. He retired as Professor and Head of the Department of Neurosurgery at AIIMS, New Delhi, having served on the neurosurgical faculty there from 1974 to 1994 and as Professor and Head from 1987 to 1994.\n\nHis practice covers brain surgery, spinal surgery and disorders of the nervous system. Apollo lists his registration with the Delhi Medical Council, and also with the Punjab and Tamil Nadu Medical Councils.",
+    experience: "48+ years",
+    qualifications: ["M.Ch (Neurosurgery)", "M.S.", "M.B.B.S."],
+    procedures: ["Brain surgery", "Spinal surgery", "Disorders of the nervous system"],
+    awards: [
+      "Neurological Society of India",
+      "Delhi Neurological Association",
+      "Honorary Member, Indian Society of Stereotactic and Functional Neurosurgery",
+      "Lifetime Achievement Award, Delhi Neurosurgical Association, 2010",
+    ],
   },
   {
     id: "dr-pakhee-aggarwal-apollo-indraprastha-gynae-oncology",
@@ -176,7 +386,26 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Gynaecology Oncology & Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-pankee-aggarwal.webp",
+    about:
+      "Dr. Pakhee Aggarwal is Senior Consultant in Gynaecological Oncology and Robotic Surgery at the Apollo Cancer Centre, Delhi, with 18 years in women's health and over 15 years performing robotic surgery.\n\nShe completed a robotic surgery fellowship with the International Union for Cancer Control at McGill University, Montreal, and trained with the European Society of Gynaecological Oncology in Belgium. Apollo records more than 20 national and international publications and more than 15 book chapters, and several gold medals during her training years.\n\nHer practice is minimally invasive gynaecology — robotic surgery, laparoscopy and hysteroscopy — applied to gynaecological cancer.",
+    experience: "18+ years",
+    qualifications: [
+      "M.S.",
+      "M.B.B.S.",
+      "MRCOG (UK)",
+      "FICOG",
+      "MIPHA",
+      "UICC Robotic Gynae-Oncology Fellowship (Canada)",
+      "Commonwealth Gynae-Oncology Fellowship (Oxford, UK)",
+    ],
+    procedures: [
+      "Robotic gynaecological surgery",
+      "Laparoscopic gynaecological surgery",
+      "Hysteroscopy",
+      "Gynaecological oncology",
+      "Minimally invasive gynaecology",
+    ],
   },
   {
     id: "dr-anil-k-dcruz-apollo-indraprastha-lung-thoracic-oncology",
@@ -185,7 +414,23 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Surgical Oncology; Head & Neck and Cancer Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anil-k-dcruz.jpg",
+    about:
+      "Dr. Anil K. D'Cruz is a Senior Consultant in head and neck surgical oncology at Apollo, with 33 years in practice, and works with the multidisciplinary oncology team at the Apollo Athenaa Women's Cancer Centre, Delhi. Apollo describes his focused clinical interest as the management of thyroid cancer, and describes him as a global leader, clinician, researcher and teacher in head and neck oncology.\n\nHe operates on cancers of the head and neck region, covering diagnosis, surgery and aftercare — tumour excision, reconstruction to restore appearance and function after tumour removal, biopsy of suspicious lumps and endoscopic surgery.",
+    experience: "33+ years",
+    qualifications: ["M.S.", "DNB", "FRCS", "Honorary FRCS, Royal College of Surgeons, London"],
+    procedures: [
+      "Head and neck cancer surgery",
+      "Thyroid cancer",
+      "Tumour excision",
+      "Reconstruction after tumour removal",
+      "Biopsy of suspicious lumps",
+      "Endoscopic surgery",
+    ],
+    workExperience: [
+      "President, Union for International Cancer Control, Geneva (2020–2022); President Elect (2018–2020) — Apollo states he is the first Indian to hold the post",
+      "Board positions with professional organisations, universities, research organisations and cancer institutions in India and abroad",
+    ],
   },
   {
     id: "dr-anshuman-agarwal-apollo-indraprastha-uro-oncology",
@@ -194,7 +439,26 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Urology / Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anshuman-agarwal.jpg",
+    about:
+      "Dr. Anshuman Agarwal is Senior Consultant in Urology, Andrology and Robotic Surgery at Indraprastha Apollo Hospitals, with 28 years of experience. Apollo records more than 1,000 robotic-assisted urological procedures over the last ten years.\n\nHe routinely performs radical prostatectomy, partial and radical nephrectomy and pyeloplasty, and also treats urinary tract infection, urinary incontinence and male sexual dysfunction. He has published in journals including Urology International and the Journal of Endourology.",
+    experience: "28+ years",
+    qualifications: [
+      "M.Ch (Urology / Genito-Urinary Surgery), Pondicherry University, 2001",
+      "M.S. (General Surgery), University of Lucknow, 1997",
+      "M.B.B.S., University of Lucknow, 1994",
+    ],
+    procedures: [
+      "Radical prostatectomy",
+      "Partial nephrectomy",
+      "Radical nephrectomy",
+      "Pyeloplasty",
+      "Robotic-assisted urological surgery",
+      "Urinary incontinence",
+      "Urinary tract infection",
+      "Male sexual dysfunction",
+    ],
+    workExperience: ["Urological Society of India", "American Urological Association"],
   },
   {
     id: "dr-ramesh-sarin-apollo-indraprastha-breast-cancer",
@@ -203,7 +467,24 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Surgical Oncology; Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ramesh-sarin.png",
+    about:
+      "Dr. Ramesh Sarin — published by Apollo as Dr. Mrs. Ramesh Sarin — is Senior Consultant in Surgical Oncology at the Apollo Cancer Centre, New Delhi, specialising in breast oncology, with over 40 years in the field.\n\nShe held a fellowship in surgical oncology at Memorial Sloan Kettering Cancer Center, New York, in 1979–80, and worked in the UK for six years, where she obtained her FRCS. She was Assistant Professor of Surgery at AIIMS from 1975 to 1982 and Associate Professor from 1983 to 1986, then Head of Surgical Oncology at a Ministry of Health hospital in Abu Dhabi, where she helped start a cancer centre. She was a founder member of the Indian Society of Oncology.\n\nHer stated areas of interest are breast conserving surgery with oncoplasty, radical and subcutaneous mastectomy with autologous and implant reconstruction, and sentinel node biopsy in patients who have had neo-adjuvant chemotherapy. She is Chairperson of the Forum for Breast Cancer Protection, an NGO that has produced films on breast cancer and runs screening and self-examination awareness lectures.",
+    experience: "40+ years",
+    qualifications: [
+      "FRCS",
+      "M.S.",
+      "M.B.B.S.",
+      "Fellowship in Surgical Oncology, Memorial Sloan Kettering Cancer Center, New York (1979–80)",
+    ],
+    procedures: [
+      "Breast conserving surgery with oncoplasty",
+      "Radical and subcutaneous mastectomy with autologous and implant reconstruction",
+      "Sentinel node biopsy after neo-adjuvant chemotherapy",
+      "Breast cancer surgery",
+      "Thyroid cancer surgery",
+      "Liver, pancreatic, stomach, rectal and gallbladder cancer surgery",
+    ],
   },
   {
     id: "dr-syed-azim-razvi-apollo-indraprastha-gi-surgery-oncology",
@@ -212,7 +493,27 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "Surgical Oncology; Colorectal / Robotic / HPB",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-syed-azim-razvi.webp",
+    about:
+      "Dr. Syed Asim Razvi is Consultant in Surgical Oncology and Robotic Surgery at the Apollo Cancer Centre, New Delhi, with more than 13 years in oncology. Apollo notes he was awarded the Gold Medal for his DNB in Surgical Oncology.\n\nHe completed fellowships in hepatopancreaticobiliary onco-surgery, colorectal onco-surgery and laparoscopic and robotic surgery at Yonsei University in South Korea. He performs major cancer surgery of the head and neck, gastrointestinal tract, liver, pancreas, breast and gynaecologic organs, with a stated interest in minimal access and robotic technique, and has published in peer-reviewed journals. He consults in English and Hindi.",
+    experience: "13+ years",
+    qualifications: [
+      "DNB (Surgical Oncology) — Gold Medal",
+      "M.S.",
+      "M.B.B.S.",
+      "Fellowship in Hepatopancreaticobiliary onco-surgery, Yonsei University, South Korea",
+      "Fellowship in Colorectal onco-surgery, Yonsei University, South Korea",
+      "Fellowship in Laparoscopic and Robotic Surgery, Yonsei University, South Korea",
+    ],
+    procedures: [
+      "Robotic and minimal access cancer surgery",
+      "Colorectal cancer surgery",
+      "Liver and pancreas cancer surgery",
+      "Gastrointestinal cancer surgery",
+      "Head and neck cancer surgery",
+      "Breast cancer surgery",
+      "Gynaecologic cancer surgery",
+    ],
   },
   {
     id: "dr-debabrata-mukherjee-apollo-indraprastha-ent-oncology",
@@ -221,7 +522,9 @@ export const doctors: Doctor[] = [
     hospital: "Indraprastha Apollo Hospitals",
     city: "Delhi",
     designation: "ENT / Head & Neck Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-debabrata-mukherjee.jpg",
+    about:
+      "Dr. Debabrata Mukherjee — ENT / Head & Neck Surgery — practises at Indraprastha Apollo Hospital, New Delhi.",
   },
 
   // Fortis Memorial Research Institute, Gurugram
@@ -232,7 +535,25 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Principal Director, Cardiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-col-manjinder-sandhu.webp",
+    about:
+      "Dr. (Col.) Manjinder Sandhu is an interventional cardiologist at Fortis Memorial Research Institute, Gurugram, with more than 35 years of experience. He had a career in the Indian Army Medical Corps before moving into civil practice.\n\nFortis lists his specialist areas as complex angioplasty — including IVUS, OCT, rotablation and laser — and structural heart procedures such as TAVR and MitraClip. He is a fellow of several international societies, has over two decades of experience teaching young cardiologists, and has authored academic papers and presented at national and international conferences.",
+    experience: "35+ years",
+    qualifications: [
+      "D.M. (Cardiology)",
+      "M.D. (Medicine)",
+      "DNB (Medicine)",
+      "M.B.B.S.",
+      "Fellow, American College of Cardiology",
+      "Fellow, Society for Cardiovascular Angiography and Interventions",
+    ],
+    procedures: [
+      "Complex angioplasty with IVUS and OCT guidance",
+      "Rotablation",
+      "Laser angioplasty",
+      "TAVR (transcatheter aortic valve replacement)",
+      "MitraClip",
+    ],
   },
   {
     id: "dr-ankur-bahl-fortis-memorial-medical-oncology",
@@ -241,7 +562,26 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Principal Director, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ankur-bahl.jpg",
+    about:
+      "Dr. Ankur Bahl is Principal Director of Medical Oncology and Haematology at Fortis Memorial Research Institute, Gurugram, with more than 15 years in the field. He took his MBBS and MD Medicine at Maulana Azad Medical College, Delhi, and his DM in Medical Oncology at AIIMS, New Delhi.\n\nHis clinical expertise is immunotherapy and targeted therapy in combination with chemotherapy, hormonal therapy and supportive and palliative care, with experience in breast, lung and gastrointestinal cancers and blood disorders. Fortis records him as lead author on the largest real-world Indian data on targeted therapy in head and neck cancer, and as lead founder of several oncology education platforms including evidence-based debates in oncology and live tumour boards.\n\nHe joined FMRI from Max Hospital, Saket, where he was Director of Medical Oncology and Haematology Oncology, and was earlier at Rajiv Gandhi Cancer Institute and Research Centre and Maulana Azad Medical College.",
+    experience: "15+ years",
+    qualifications: [
+      "D.M. (Medical Oncology), AIIMS New Delhi",
+      "M.D. (Medicine), Maulana Azad Medical College, Delhi",
+      "M.B.B.S., Maulana Azad Medical College, Delhi",
+      "Course in Adverse Drug Reactions, Drug Interactions and Pharmacovigilance, University of Oxford, UK",
+    ],
+    procedures: [
+      "Immunotherapy",
+      "Targeted therapy with chemotherapy",
+      "Hormonal therapy",
+      "Supportive and palliative care",
+      "Breast cancer",
+      "Lung cancer",
+      "Gastrointestinal cancer",
+      "Blood disorders",
+    ],
   },
   {
     id: "dr-sandeep-vaishya-fortis-memorial-neurosurgery",
@@ -250,7 +590,20 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Executive Director & HOD, Neurosurgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sandeep-vaishya.webp",
+    about:
+      "Dr. Sandeep Vaishya is Executive Director and Head of Neurosurgery at Fortis Memorial Research Institute, Gurgaon, with more than 30 years in the speciality. He has worked as a faculty member in the Department of Neurosurgery at AIIMS.\n\nFortis describes him as one of the foremost surgeons in the world for brachial plexus injuries, and one of the foremost in South Asia for Gamma Knife surgery. He also works in minimally invasive and image-guided neurosurgery, intracranial tumour surgery including skull base tumours, functional neurosurgery, spinal surgery and peripheral nerve surgery.",
+    experience: "30+ years",
+    procedures: [
+      "Brachial plexus injury surgery",
+      "Gamma Knife radiosurgery",
+      "Minimally invasive and image-guided neurosurgery",
+      "Intracranial tumour surgery including skull base tumours",
+      "Functional neurosurgery",
+      "Spinal surgery",
+      "Peripheral nerve surgery",
+    ],
+    awards: ["Herbert Krause Medal", "Sundt Fellowship, Mayo Clinic, USA"],
   },
   {
     id: "dr-rama-joshi-fortis-memorial-gynae-oncology",
@@ -259,7 +612,27 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Chairman, Gynae Oncology & Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-rama-joshi.webp",
+    about:
+      "Dr. Rama Joshi is Chairman of Gynae Oncology and Robotic Surgery at Fortis Memorial Research Institute, Gurgaon. Fortis records more than 30 years performing radical surgery for gynaecological cancers and more than 10 years of robotic surgery.\n\nShe was a Fellow in Gynae Oncology at Tata Memorial Hospital, Mumbai, and a UICC Fellow at BGH, Buffalo, New York. She has also trained at the Comprehensive Cancer Centre, University of Michigan, and the University of Lyon in France, and took da Vinci robotic training with Intuitive at Sunnyvale, California.",
+    experience: "30+ years",
+    qualifications: [
+      "M.S. (Gynaecology and Obstetrics)",
+      "M.B.B.S. (Gold Medallist)",
+      "Former Fellow in Gynae Oncology, Tata Memorial Hospital, Mumbai",
+      "UICC Fellow, BGH Buffalo, New York",
+    ],
+    procedures: [
+      "Radical surgery for gynaecological cancer",
+      "Robotic gynaecological surgery",
+      "Ovarian cancer surgery",
+      "Cervical cancer surgery",
+      "Uterine cancer surgery",
+    ],
+    awards: [
+      "Double Helical National Health Award, 2017",
+      "Gold Award for contribution to women's cancer care and management, Cancer Care Awards",
+    ],
   },
   {
     id: "dr-biswajyoti-hazarika-fortis-memorial-lung-thoracic-oncology",
@@ -268,7 +641,17 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Surgical Oncology / Head & Neck; Thoracic Oncology Team",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-biswajyoti-hazarika.webp",
+    about:
+      "Dr. Biswajyoti Hazarika is Principal Director of Surgical Oncology at Fortis Memorial Research Institute, Gurugram, and a head and neck surgical oncologist.\n\nFortis describes his expertise as the treatment of complex head and neck cancers, with advanced surgery for oral, throat, laryngeal, thyroid and salivary gland cancer, and a stated focus on precision and patient safety. His profile emphasises personalised treatment plans that aim to preserve function and quality of life.",
+    procedures: [
+      "Oral cancer surgery",
+      "Throat cancer surgery",
+      "Laryngeal cancer surgery",
+      "Thyroid cancer surgery",
+      "Salivary gland cancer surgery",
+      "Head and neck cancer surgery",
+    ],
   },
   {
     id: "dr-anil-mandhani-fortis-memorial-uro-oncology",
@@ -277,7 +660,25 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Chairman, Urology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anil-mandhani.webp",
+    about:
+      "Dr. Anil Mandhani is Executive Director of Urology at Fortis Memorial Research Institute, Gurgaon. His hospital profile records more than 550 robotic cases and more than 1,000 kidney transplants, with expertise in managing complex surgical situations.\n\nHe held a clinical fellowship in robotic uro-oncology at New York Presbyterian Hospital in 2006–07, during which Fortis states he assisted and performed more than 350 robotic radical prostatectomies in a single year. He previously worked at SGPGIMS, Lucknow, where the profile records that he helped train more than 100 residents to M.Ch degrees.",
+    qualifications: [
+      "Fellow of the American College of Surgeons (2012)",
+      "Clinical Fellowship in Robotic Uro-Oncology, New York Presbyterian Hospital (2006–07)",
+    ],
+    procedures: [
+      "Robotic urological surgery",
+      "Robotic radical prostatectomy",
+      "Kidney transplant surgery",
+      "Uro-oncology",
+    ],
+    awards: [
+      "Fellow of the American College of Surgeons, 2012",
+      "International Guest Scholarship, American College of Surgeons, 2010",
+      "Best Reviewer, Journal of Urology, 2017",
+      "Innovation Award, Urological Society of India, for developing an endopyelotomy sheath to facilitate antegrade endopyelotomy",
+    ],
   },
   {
     id: "dr-biswajyoti-hazarika-fortis-memorial-breast-cancer",
@@ -286,7 +687,17 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Surgical Oncology; Breast Cancer Care",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-biswajyoti-hazarika.webp",
+    about:
+      "Dr. Biswajyoti Hazarika is Principal Director of Surgical Oncology at Fortis Memorial Research Institute, Gurugram, and a head and neck surgical oncologist.\n\nFortis describes his expertise as the treatment of complex head and neck cancers, with advanced surgery for oral, throat, laryngeal, thyroid and salivary gland cancer, and a stated focus on precision and patient safety. His profile emphasises personalised treatment plans that aim to preserve function and quality of life.",
+    procedures: [
+      "Oral cancer surgery",
+      "Throat cancer surgery",
+      "Laryngeal cancer surgery",
+      "Thyroid cancer surgery",
+      "Salivary gland cancer surgery",
+      "Head and neck cancer surgery",
+    ],
   },
   {
     id: "dr-amit-javed-fortis-memorial-gi-surgery-oncology",
@@ -295,7 +706,22 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Principal Director & HOD, Lap GI / GI Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-amit-javed.webp",
+    about:
+      "Dr. Amit Javed — published by Fortis as Dr. (Prof.) Amit Javed — is Principal Director and Head of Laparoscopic GI, GI Oncology, Bariatric and Minimally Invasive Surgery at Fortis Memorial Research Institute, Gurgaon, with over 25 years of experience.\n\nHe took his MBBS at Kasturba Medical College, Manipal, his MS in General Surgery and senior residency at PGIMER, Chandigarh, and his M.Ch in Gastrointestinal Surgery at AIIMS, New Delhi. He has worked as an Assistant Professor in the Department of Abdominal Transplant Surgery at the University of California, San Francisco, on liver, pancreas and kidney transplants, and in the thoracic division of Memorial Sloan Kettering Cancer Center, New York.\n\nFortis records more than 50 articles in international and national journals and textbooks, and several innovative surgical techniques he has described and published.",
+    experience: "25+ years",
+    qualifications: [
+      "M.Ch (Gastrointestinal Surgery), AIIMS New Delhi",
+      "M.S. (General Surgery), PGIMER Chandigarh",
+      "M.B.B.S., Kasturba Medical College, Manipal",
+    ],
+    procedures: [
+      "Gastrointestinal cancer surgery",
+      "Laparoscopic gastrointestinal surgery",
+      "Bariatric and weight-loss surgery",
+      "Robotic surgery",
+      "Liver, pancreas and biliary surgery",
+    ],
   },
   {
     id: "dr-atul-kumar-mittal-fortis-memorial-ent-oncology",
@@ -304,7 +730,20 @@ export const doctors: Doctor[] = [
     hospital: "Fortis Memorial Research Institute",
     city: "Gurgaon",
     designation: "Chairman, ENT",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-atul-kumar-mittal.webp",
+    about:
+      "Dr. Atul Kumar Mittal is Principal Director of ENT at Fortis Memorial Research Institute, Gurugram, with over 33 years of experience in advanced ENT care and surgery. His hospital profile records more than 800 surgeries a year.\n\nHis named areas are minimal access endoscopic sinus and skull base surgery, balloon sinuplasty, sleep surgery, cochlear implantation, and thyroid and laryngeal surgery. He is also described as highly skilled in endoscopic adenoidectomy and in immunotherapy for allergic respiratory disease, and has several national and international publications.",
+    experience: "33+ years",
+    qualifications: ["M.S. (Delhi University)", "M.B.B.S."],
+    procedures: [
+      "Minimal access endoscopic sinus and skull base surgery",
+      "Balloon sinuplasty",
+      "Sleep surgery",
+      "Cochlear implantation",
+      "Thyroid and laryngeal surgery",
+      "Endoscopic adenoidectomy",
+      "Immunotherapy for allergic respiratory disease",
+    ],
   },
 
   // Artemis Hospitals, Gurugram
@@ -315,7 +754,36 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Cardiology / Interventional Cardiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-vivek-gupta.jpg",
+    about:
+      "Dr. Vivek Gupta — published by Apollo as Prof. Dr. Vivek Gupta — is a cardiologist at Apollo Hospitals, Delhi, with over 25 years in cardiovascular medicine. Apollo lists his registrations as DMC 31469 and MCI 32112, and records vast experience in coronary angiography, balloon angioplasty, stent implantation, pacemaker implantation, balloon valvuloplasty and biventricular pacing.\n\nHis clinical practice covers a wide range of cardiovascular problems, and Apollo names heart disease, arrhythmias and hypertension as conditions he is particularly adept at diagnosing and managing. He also teaches and mentors, and consults in English, Hindi and French.",
+    experience: "25+ years",
+    qualifications: [
+      "M.D.",
+      "D.M.",
+      "FESC",
+      "FEAPCI",
+      "FAPSIC",
+      "FCSI",
+      "FICC",
+      "FIC France",
+      "FIEIC",
+      "FSCAI",
+    ],
+    procedures: [
+      "Coronary angiography",
+      "Balloon angioplasty and stent implantation",
+      "Balloon valvuloplasty",
+      "Pacemaker implantation",
+      "Biventricular pacing",
+      "Cardiac catheterisation",
+      "Heart disease, arrhythmia and hypertension management",
+    ],
+    workExperience: [
+      "More than 200 invited guest lectures at national and international conferences",
+      "Chaired sessions at about 500 congresses",
+      "Attended about 100 workshops",
+    ],
   },
   {
     id: "dr-priya-tiwari-artemis-medical-oncology",
@@ -324,7 +792,28 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Head, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-priya-tiwari.webp",
+    about:
+      "Dr. Priya Tiwari is a medical oncologist and haemato-oncologist practising in Delhi NCR. She trained entirely at the All India Institute of Medical Sciences, New Delhi — an MD in Internal Medicine in 2010 and a DM in Medical Oncology in 2015 — after taking her MBBS as a gold medallist at Banaras Hindu University in 2006.\n\nShe treats solid tumours and blood cancers, including lung, kidney, liver, breast, ovarian, uterine, endometrial, stomach, pancreatic, oesophageal, colorectal, head and neck and thyroid cancer, and lymphomas, using chemotherapy, targeted therapy and immunotherapy. She has a stated interest in complex cancers of the kidney, liver and gastrointestinal tract, and teaches DNB students.",
+    qualifications: [
+      "DM (Medical Oncology) — AIIMS, New Delhi, 2015",
+      "M.D. (Internal Medicine) — AIIMS, New Delhi, 2010",
+      "MBBS (Gold Medallist) — Banaras Hindu University, Varanasi, 2006",
+    ],
+    procedures: [
+      "Chemotherapy",
+      "Targeted therapy",
+      "Immunotherapy",
+      "Lung cancer",
+      "Kidney cancer",
+      "Liver cancer",
+      "Breast cancer",
+      "Ovarian, uterine and endometrial cancer",
+      "Stomach, pancreatic, oesophageal and colorectal cancer",
+      "Head and neck cancer",
+      "Thyroid cancer",
+      "Lymphomas",
+    ],
   },
   {
     id: "dr-pawan-goyal-artemis-neurosurgery",
@@ -333,7 +822,22 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Associate Chief, Neurosurgery & Head, Neuroendoscopy",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-pawan-goyal.webp",
+    about:
+      "Dr. Pawan Goyal is Associate Chief of Neurosurgery and Head of Neuroendoscopy at Artemis Hospitals, Gurugram. Artemis records that he began his medical career in 1996, took his MBBS and MS in General Surgery at Pt. B. D. Sharma PGIMS, Rohtak, and trained in neurosurgery at KGMU, Lucknow.\n\nHis stated clinical focus is minimally invasive spine and neurosurgery, endoscopic neurosurgery, stereotactic and functional neurosurgery, brain and spine tumours of all types, and traumatic head and spine injury. He has published papers in journals and presented at national and international conferences. He consults in English and Hindi.",
+    qualifications: [
+      "M.Ch (Neurosurgery), KGMU Lucknow",
+      "M.S. (General Surgery), Pt. B. D. Sharma PGIMS, Rohtak",
+      "M.B.B.S., Pt. B. D. Sharma PGIMS, Rohtak",
+    ],
+    procedures: [
+      "Minimally invasive spine and neurosurgery",
+      "Endoscopic neurosurgery",
+      "Stereotactic and functional neurosurgery",
+      "Brain and spine tumour surgery",
+      "Traumatic head and spine injury",
+    ],
+    workExperience: ["Neurological Society of India"],
   },
   {
     id: "dr-tapan-singh-chauhan-artemis-gynae-oncology",
@@ -342,7 +846,36 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Surgical Oncology; Gynae & Peritoneal Surface Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-tapan-singh-chauhan.webp",
+    about:
+      "Dr. Tapan Singh Chauhan is Senior Consultant in Surgical Oncology, Robotics, GI and HPB, Gynae and Peritoneal Surface Oncology at Artemis Hospitals, Gurugram. His special interests, as Artemis states them, are gastrointestinal and hepatopancreaticobiliary oncology and peritoneal surface malignancy treated with HIPEC.\n\nHe took his MS in General Surgery at Pt. B. D. Sharma PGIMS, Rohtak, and trained in surgical oncology at Dr. B.R.A. IRCH, AIIMS, New Delhi and the Gujarat Cancer Research Institute, Ahmedabad. His fellowships include HPB oncology with Prof. Marcus Buechler at Heidelberg, minimal access surgery with Dr. T. Subramaneshwar Rao at the Indo-American Cancer Institute, Hyderabad, and an ESSO fellowship in cytoreductive surgery and HIPEC at Lyon under Prof. Olivier Glehen.",
+    qualifications: [
+      "M.Ch (Surgical Oncology), GCRI Ahmedabad",
+      "M.S. (General Surgery), Pt. B. D. Sharma PGIMS, Rohtak",
+      "M.B.B.S.",
+      "MRCS (UK)",
+      "Fellow, GI and HPB Oncology (Germany)",
+      "Fellow, Minimal Access Oncology (Hyderabad)",
+      "ESSO Fellow in Cytoreductive Surgery, HIPEC and PIPAC (France)",
+    ],
+    procedures: [
+      "Cytoreductive surgery with HIPEC",
+      "PIPAC",
+      "Gastrointestinal cancer surgery",
+      "Hepatopancreaticobiliary cancer surgery",
+      "Gynaecological cancer surgery",
+      "Robotic and minimal access cancer surgery",
+    ],
+    workExperience: [
+      "Association of Surgeons of India",
+      "Indian Association of Surgical Oncology",
+      "Indian Society of Peritoneal Surface Malignancy",
+      "Indian Society of Oncology",
+      "Association of Breast Surgeons of India",
+      "European Society of Surgical Oncology",
+      "European Society of Medical Oncology",
+      "Society of Surgical Oncology",
+    ],
   },
   {
     id: "dr-tapan-singh-chauhan-artemis-lung-thoracic-oncology",
@@ -351,7 +884,36 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Surgical Oncology; Thoracic Oncology Multidisciplinary Care",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-tapan-singh-chauhan.webp",
+    about:
+      "Dr. Tapan Singh Chauhan is Senior Consultant in Surgical Oncology, Robotics, GI and HPB, Gynae and Peritoneal Surface Oncology at Artemis Hospitals, Gurugram. His special interests, as Artemis states them, are gastrointestinal and hepatopancreaticobiliary oncology and peritoneal surface malignancy treated with HIPEC.\n\nHe took his MS in General Surgery at Pt. B. D. Sharma PGIMS, Rohtak, and trained in surgical oncology at Dr. B.R.A. IRCH, AIIMS, New Delhi and the Gujarat Cancer Research Institute, Ahmedabad. His fellowships include HPB oncology with Prof. Marcus Buechler at Heidelberg, minimal access surgery with Dr. T. Subramaneshwar Rao at the Indo-American Cancer Institute, Hyderabad, and an ESSO fellowship in cytoreductive surgery and HIPEC at Lyon under Prof. Olivier Glehen.",
+    qualifications: [
+      "M.Ch (Surgical Oncology), GCRI Ahmedabad",
+      "M.S. (General Surgery), Pt. B. D. Sharma PGIMS, Rohtak",
+      "M.B.B.S.",
+      "MRCS (UK)",
+      "Fellow, GI and HPB Oncology (Germany)",
+      "Fellow, Minimal Access Oncology (Hyderabad)",
+      "ESSO Fellow in Cytoreductive Surgery, HIPEC and PIPAC (France)",
+    ],
+    procedures: [
+      "Cytoreductive surgery with HIPEC",
+      "PIPAC",
+      "Gastrointestinal cancer surgery",
+      "Hepatopancreaticobiliary cancer surgery",
+      "Gynaecological cancer surgery",
+      "Robotic and minimal access cancer surgery",
+    ],
+    workExperience: [
+      "Association of Surgeons of India",
+      "Indian Association of Surgical Oncology",
+      "Indian Society of Peritoneal Surface Malignancy",
+      "Indian Society of Oncology",
+      "Association of Breast Surgeons of India",
+      "European Society of Surgical Oncology",
+      "European Society of Medical Oncology",
+      "Society of Surgical Oncology",
+    ],
   },
   {
     id: "dr-piyush-gupta-artemis-uro-oncology",
@@ -360,7 +922,25 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Urology, Andrology, Renal Transplant & Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-piyush-gupta.webp",
+    about:
+      "Dr. Piyush Gupta is Senior Consultant in Urology and Andrology, a Renal Transplant Surgeon and a Robotic Surgery Specialist at Artemis Hospitals, Gurugram, with over 14 years of surgical experience. Artemis records over 1,000 successful procedures, combining open, laparoscopic and robotic technique, and lists him as a Da Vinci-certified robotic surgeon.\n\nHe has served at the All India Institute of Medical Sciences, Rishikesh, where Artemis states he gained extensive experience managing complex urological cases. His stated areas are endourology including RIRS, PCNL and stone surgery; andrology covering male infertility, erectile dysfunction and premature ejaculation; prostate disorders including BPH; female urology; and genitourinary cancers of the kidney, bladder, prostate and testis. He consults in English and Hindi.",
+    experience: "14+ years",
+    qualifications: [
+      "M.Ch (Urology), Kerala University of Health Sciences, 2018",
+      "M.S. (General Surgery), Dr. B. R. Ambedkar University, Agra, 2014",
+      "M.B.B.S., CSJM University, 2011",
+      "Da Vinci Certified Robotic Surgeon",
+    ],
+    procedures: [
+      "Kidney stone management — RIRS, PCNL and stone surgery",
+      "Prostate enlargement (BPH) treatment and prostate surgery",
+      "Urological cancer surgery — kidney, bladder, prostate and testicular",
+      "Robotic and laparoscopic urological surgery",
+      "Andrology — male infertility, erectile dysfunction, premature ejaculation",
+      "Female urology",
+      "Renal transplant surgery",
+    ],
   },
   {
     id: "dr-deepak-jha-artemis-breast-cancer",
@@ -369,7 +949,36 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Chief, Breast Surgery & Senior Consultant, Surgical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-deepak-jha.webp",
+    about:
+      "Dr. Deepak Jha is Chief of Breast Surgery and Senior Consultant in Surgical Oncology at Artemis Hospitals, Gurugram. An alumnus of Surgical Oncology at IRCH-AIIMS, he has trained extensively in advanced breast surgery and breast reconstruction, and Artemis states he is among the first in India to hold a breast surgery fellowship from the European Board of Surgery.\n\nHe trained in breast oncoplasty with the European Society of Surgical Oncology and held an observership in breast surgery at Vall d'Hebron Hospital, Barcelona. He was previously with Fortis — both FMRI Gurugram and Fortis Vasant Kunj — and with Rajiv Gandhi Cancer Institute.",
+    qualifications: [
+      "M.S. (General Surgery)",
+      "M.B.B.S.",
+      "Surgical Oncology, AIIMS",
+      "Fellowship in Breast Surgery, European Board of Surgery",
+      "Breast Surgery and Oncoplasty, ESSO and Barcelona",
+      "Fellow, Head and Neck Oncology, IFHNOS",
+      "GyanBurman Fellow",
+    ],
+    procedures: [
+      "Breast conservation and oncoplasty",
+      "Nipple sparing mastectomy",
+      "Mastectomy and lumpectomy",
+      "Radioguided breast surgery (ROLL)",
+      "Sentinel node biopsy",
+      "Arm reverse mapping for lymphoedema prevention",
+      "DIEP free flap breast reconstruction",
+    ],
+    awards: [
+      "Association of Breast Surgeons of India",
+      "European Society of Surgical Oncology",
+      "Association of Surgeons of India",
+      "Foundation for Head-Neck Oncology",
+      "Visiting fellowship, EBCC, Vienna",
+      "Best paper award, runner up, RGCON",
+      "Commendation for flood relief services, Mumbai",
+    ],
   },
   {
     id: "dr-tapan-singh-chauhan-artemis-gi-surgery-oncology",
@@ -378,7 +987,36 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Surgical Oncology; GI & HPB",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-tapan-singh-chauhan.webp",
+    about:
+      "Dr. Tapan Singh Chauhan is Senior Consultant in Surgical Oncology, Robotics, GI and HPB, Gynae and Peritoneal Surface Oncology at Artemis Hospitals, Gurugram. His special interests, as Artemis states them, are gastrointestinal and hepatopancreaticobiliary oncology and peritoneal surface malignancy treated with HIPEC.\n\nHe took his MS in General Surgery at Pt. B. D. Sharma PGIMS, Rohtak, and trained in surgical oncology at Dr. B.R.A. IRCH, AIIMS, New Delhi and the Gujarat Cancer Research Institute, Ahmedabad. His fellowships include HPB oncology with Prof. Marcus Buechler at Heidelberg, minimal access surgery with Dr. T. Subramaneshwar Rao at the Indo-American Cancer Institute, Hyderabad, and an ESSO fellowship in cytoreductive surgery and HIPEC at Lyon under Prof. Olivier Glehen.",
+    qualifications: [
+      "M.Ch (Surgical Oncology), GCRI Ahmedabad",
+      "M.S. (General Surgery), Pt. B. D. Sharma PGIMS, Rohtak",
+      "M.B.B.S.",
+      "MRCS (UK)",
+      "Fellow, GI and HPB Oncology (Germany)",
+      "Fellow, Minimal Access Oncology (Hyderabad)",
+      "ESSO Fellow in Cytoreductive Surgery, HIPEC and PIPAC (France)",
+    ],
+    procedures: [
+      "Cytoreductive surgery with HIPEC",
+      "PIPAC",
+      "Gastrointestinal cancer surgery",
+      "Hepatopancreaticobiliary cancer surgery",
+      "Gynaecological cancer surgery",
+      "Robotic and minimal access cancer surgery",
+    ],
+    workExperience: [
+      "Association of Surgeons of India",
+      "Indian Association of Surgical Oncology",
+      "Indian Society of Peritoneal Surface Malignancy",
+      "Indian Society of Oncology",
+      "Association of Breast Surgeons of India",
+      "European Society of Surgical Oncology",
+      "European Society of Medical Oncology",
+      "Society of Surgical Oncology",
+    ],
   },
   {
     id: "dr-biswajyoti-hazarika-artemis-ent-oncology",
@@ -387,7 +1025,17 @@ export const doctors: Doctor[] = [
     hospital: "Artemis Hospitals",
     city: "Gurgaon",
     designation: "Chief, Head & Neck Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-biswajyoti-hazarika.webp",
+    about:
+      "Dr. Biswajyoti Hazarika is Principal Director of Surgical Oncology at Fortis Memorial Research Institute, Gurugram, and a head and neck surgical oncologist.\n\nFortis describes his expertise as the treatment of complex head and neck cancers, with advanced surgery for oral, throat, laryngeal, thyroid and salivary gland cancer, and a stated focus on precision and patient safety. His profile emphasises personalised treatment plans that aim to preserve function and quality of life.",
+    procedures: [
+      "Oral cancer surgery",
+      "Throat cancer surgery",
+      "Laryngeal cancer surgery",
+      "Thyroid cancer surgery",
+      "Salivary gland cancer surgery",
+      "Head and neck cancer surgery",
+    ],
   },
 
   // BLK-Max Super Speciality Hospital, Delhi
@@ -398,7 +1046,18 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Cardiology / Interventional Cardiology / Electrophysiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-balbir-singh.jpg",
+    about:
+      "Dr. Balbir Singh is Group Chairman, Cardiac Sciences and Chief of Interventional Cardiology and Electrophysiology at Max Super Speciality Hospital, Saket, New Delhi. Max Healthcare states that he heads cardiology across the group — covering clinical governance, quality, research and the DNB training programme in cardiology — and that he has more than 25 years of experience in cardiac sciences.\n\nHe joined Max Healthcare in November 2019, after serving as Chairman of Interventional Cardiology and Electrophysiology at Medanta. His published clinical interests are interventional cardiology and cardiac electrophysiology, including pacemakers, and the conditions listed on his hospital profile include cardiac arrhythmia, heart attack, hypertension and endocarditis.\n\nHe was awarded the Padma Shri in 2007. His hospital profile also lists the Best Operator award at India Live, the Golden Hand Award at AICT Singapore 2012, and Best Late-Breaking Trial at APHRS.",
+    experience: "25+ years",
+    procedures: [
+      "Interventional Cardiology",
+      "Cardiac Electrophysiology and Pacemakers",
+      "Cardiac Arrhythmia",
+      "Heart Attack (Myocardial Infarction)",
+      "Hypertension",
+      "Endocarditis",
+    ],
   },
   {
     id: "dr-sajjan-rajpurohit-blk-max-medical-oncology",
@@ -407,7 +1066,21 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Senior Director, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sajjan-rajpurohit.jpg",
+    about:
+      "Dr. Sajjan Rajpurohit is Senior Director of Medical Oncology at BLK-Max Super Speciality Hospital, New Delhi. His hospital profile records around 20 years of experience in medical oncology.\n\nBLK-Max lists him across the hospital's cancer programmes — breast, lung and thoracic, head and neck, gastrointestinal, gynaecologic, urologic and paediatric cancers, along with sarcoma and bone cancer and lymphoma. Medical oncology covers the drug-based side of cancer treatment: chemotherapy, targeted therapy and immunotherapy, usually planned alongside surgery and radiation in a tumour board.",
+    experience: "20+ years",
+    procedures: [
+      "Breast Cancer",
+      "Lung and Thoracic Cancer",
+      "Head and Neck Cancer",
+      "Gastrointestinal Cancer",
+      "Gynaecologic Cancer",
+      "Urologic Cancer",
+      "Sarcoma and Bone Cancer",
+      "Lymphoma",
+      "Paediatric Cancer",
+    ],
   },
   {
     id: "dr-bipin-walia-blk-max-neurosurgery",
@@ -416,7 +1089,21 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Neurosurgery / Spine Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/prof-col-dr-bipin-walia.webp",
+    about:
+      "Prof. (Col.) Dr. Bipin Walia is Chairman and Head of Neurosurgery and Neurospine at Max Healthcare, Saket, practising at Max Smart Super Speciality Hospital, Saket, New Delhi. His hospital profile records around 29 years of experience.\n\nHe trained at the Armed Forces Medical College, Pune, taking his MBBS and MS in General Surgery there, and completed his M.Ch in Neurosurgery at the All India Institute of Medical Sciences, New Delhi. His published areas of practice are neurosurgery, neurosciences and spine surgery.",
+    experience: "29+ years",
+    qualifications: [
+      "MBBS — Armed Forces Medical College, Pune",
+      "MS (General Surgery) — Armed Forces Medical College, Pune",
+      "M.Ch (Neurosurgery) — All India Institute of Medical Sciences, New Delhi",
+    ],
+    procedures: [
+      "Neurosurgery",
+      "Neurospine and Spine Surgery",
+      "Brain Tumour Surgery",
+      "Neurosciences",
+    ],
   },
   {
     id: "dr-shruti-bhatia-blk-max-gynae-oncology",
@@ -425,7 +1112,17 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Director, Gynaecological Surgical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-shruti-bhatia.webp",
+    about:
+      "Dr. Shruti Bhatia is Director of Gynaecological Surgical Oncology at BLK-Max Super Speciality Hospital, New Delhi, with more than 25 years of experience. Her published focus is the management of cancers of the cervix, uterus, ovaries, vulva and vagina.\n\nShe is a trained robotic surgeon and her hospital profile records numerous robotic operations for gynaecological cancer. She is a recognised teacher with the National Board of Examinations in Medical Sciences for the DrNB in Gynaecological Oncology, and was previously Principal Consultant and Head of Gynae Oncology at Action Cancer Hospital, New Delhi. She has authored articles in national and international publications and speaks at medical conferences.",
+    experience: "25+ years",
+    procedures: [
+      "Cervical cancer surgery",
+      "Uterine cancer surgery",
+      "Ovarian cancer surgery",
+      "Vulvar and vaginal cancer surgery",
+      "Robotic surgery for gynaecological cancer",
+    ],
   },
   {
     id: "dr-shaiwal-khandelwal-blk-max-lung-thoracic-oncology",
@@ -434,7 +1131,20 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Thoracic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-shaiwal-khandelwal.jpg",
+    about:
+      "Dr. Shaiwal Khandelwal is Associate Director of Thoracic Surgery at Max Healthcare, based at Max Super Speciality Hospital, Saket, with 22 years of experience.\n\nHe was Consultant in Thoracic Surgery at Medanta – The Medicity from 2010 to 2018, and is a faculty member at the Ethicon Institute of Surgical Institution, New Delhi. His hospital profile records advanced robotic work, including reconstruction of the sympathetic nerve using the da Vinci robotic system.",
+    experience: "22+ years",
+    qualifications: [
+      "MS (General Surgery), Institute of Medical Sciences, Banaras Hindu University, Varanasi",
+    ],
+    procedures: [
+      "Thoracic surgery",
+      "Robotic thoracic surgery",
+      "Lung surgery",
+      "Mediastinal surgery",
+      "Sympathetic nerve reconstruction",
+    ],
   },
   {
     id: "dr-anil-kumar-sharma-blk-max-uro-oncology",
@@ -443,7 +1153,7 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Urology / Uro-Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anil-kumar-sharma.jpg",
   },
   {
     id: "dr-rohit-nayyar-blk-max-breast-cancer",
@@ -452,7 +1162,26 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "Surgical Oncology / Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-rohit-nayyar.jpg",
+    about:
+      "Dr. Rohit Nayyar is Director of Surgical Oncology at Max Super Speciality Hospital, Saket, with more than 27 years in the speciality. His core areas as Max publishes them are head and neck cancer — including complex and recurrent disease, skull base surgery, LASER surgery, transoral robotic surgery and robotic surgery — alongside breast, gynaecological, gastrointestinal, thoracic and oesophageal cancer, with an emphasis on organ-conservative surgery.\n\nHe trained at cancer institutes in India and abroad, including Memorial Sloan Kettering Cancer Center, and in Europe and the UK. He also consults at Max Hospital Gurgaon and Max Smart Super Speciality Hospital, Saket.",
+    experience: "27+ years",
+    qualifications: [
+      "MCh (Surgical Oncology), 2001",
+      "MS (General Surgery), 1997",
+      "MBBS, Gujarat University, 1993",
+    ],
+    procedures: [
+      "Head and neck cancer surgery, including complex and recurrent disease",
+      "Skull base surgery",
+      "Transoral robotic surgery (TORS)",
+      "LASER surgery",
+      "Breast cancer surgery",
+      "Gynaecological cancer surgery",
+      "Gastrointestinal cancer surgery",
+      "Thoracic and oesophageal cancer surgery",
+      "Organ-conservative surgery",
+    ],
   },
   {
     id: "dr-subhash-gupta-blk-max-gi-surgery-oncology",
@@ -461,7 +1190,23 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "GI Surgery / Hepatobiliary & Transplant",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/prof-dr-subhash-gupta.webp",
+    about:
+      "Prof. (Dr.) Subhash Gupta is Group Chairman of the Centre for Liver and Biliary Sciences and GI Surgery at Max Healthcare, consulting at Max Super Speciality Hospital, Saket and Max Vaishali. Max records 37 years of experience and over 30 years in surgical gastroenterology, liver transplantation and hepatopancreaticobiliary oncology.\n\nMax describes the centre he chairs as one of the largest liver transplant centres in the world, with experience of over 3,000 transplants and around 200 transplants a year alongside a similar number of difficult HPB cases. He joined Max Healthcare in January 2017 and has published over 30 papers on aspects of living donor liver transplant in indexed journals.",
+    experience: "37+ years",
+    qualifications: [
+      "MD, All India Institute of Medical Sciences",
+      "MBBS, All India Institute of Medical Sciences",
+      "Fellow of the Royal College of Surgeons of Edinburgh",
+      "Fellow of the Royal College of Surgeons of Glasgow",
+    ],
+    procedures: [
+      "Living donor liver transplant",
+      "Hepatopancreaticobiliary oncology surgery",
+      "Biliary surgery",
+      "Gastrointestinal surgery",
+      "Robotic surgery",
+    ],
   },
   {
     id: "dr-sanjay-sachdeva-blk-max-ent-oncology",
@@ -470,7 +1215,19 @@ export const doctors: Doctor[] = [
     hospital: "BLK-Max Super Speciality Hospital",
     city: "Delhi",
     designation: "ENT / Head & Neck",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sanjay-sachdeva.webp",
+    about:
+      "Dr. Sanjay Sachdeva is Principal Director of ENT and Head and Neck Surgery at Max Healthcare, consulting at Max Super Speciality Hospital, Saket and Max Multi Speciality Centre, Panchsheel Park. Max records 40 years of experience.\n\nHe is co-author, with Dr. S. K. Kaluskar of the UK, of a book on the anterior skull base surgical approach being published by Elsevier India, and has been invited to national and international conferences as speaker, moderator, faculty and course director.",
+    experience: "40+ years",
+    qualifications: [
+      "MS (ENT), Maulana Azad Medical College, G.B. Pant Hospital and LNJP Hospital, New Delhi",
+      "MBBS, Maulana Azad Medical College, New Delhi",
+    ],
+    procedures: [
+      "Ear, nose and throat surgery",
+      "Head and neck surgery",
+      "Anterior skull base surgery",
+    ],
   },
 
   // Max Super Speciality Hospital, Saket, Delhi
@@ -481,7 +1238,18 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Cardiology / Interventional Cardiology / Electrophysiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-balbir-singh.jpg",
+    about:
+      "Dr. Balbir Singh is Group Chairman, Cardiac Sciences and Chief of Interventional Cardiology and Electrophysiology at Max Super Speciality Hospital, Saket, New Delhi. Max Healthcare states that he heads cardiology across the group — covering clinical governance, quality, research and the DNB training programme in cardiology — and that he has more than 25 years of experience in cardiac sciences.\n\nHe joined Max Healthcare in November 2019, after serving as Chairman of Interventional Cardiology and Electrophysiology at Medanta. His published clinical interests are interventional cardiology and cardiac electrophysiology, including pacemakers, and the conditions listed on his hospital profile include cardiac arrhythmia, heart attack, hypertension and endocarditis.\n\nHe was awarded the Padma Shri in 2007. His hospital profile also lists the Best Operator award at India Live, the Golden Hand Award at AICT Singapore 2012, and Best Late-Breaking Trial at APHRS.",
+    experience: "25+ years",
+    procedures: [
+      "Interventional Cardiology",
+      "Cardiac Electrophysiology and Pacemakers",
+      "Cardiac Arrhythmia",
+      "Heart Attack (Myocardial Infarction)",
+      "Hypertension",
+      "Endocarditis",
+    ],
   },
   {
     id: "dr-atul-sharma-max-saket-medical-oncology",
@@ -490,7 +1258,14 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/prof-dr-atul-sharma.webp",
+    about:
+      "Prof. (Dr.) Atul Sharma is Vice Chairman of Medical Oncology at Max Hospital, Saket, and also consults at Max Smart Super Speciality Hospital, Saket and the Max Institute of Cancer Care, Lajpat Nagar. His published areas are breast cancer, thoracic oncology and gynaecologic oncology.\n\nHe came to Max from a long academic career at AIIMS, New Delhi: Senior Resident in Medical Oncology 1992–98, Assistant Professor 1999–2003, Associate Professor 2004–08, Additional Professor 2008–12, and Professor and Head of Department in 2022–23. He has presented oral papers at the American Society of Clinical Oncology in 2009 and the European Society for Medical Oncology in 2018.",
+    procedures: ["Medical oncology", "Breast cancer", "Thoracic oncology", "Gynaecologic oncology"],
+    awards: [
+      "ISMPO Oration, Biennial ISMPO-ISO meeting, Indore, November 2019",
+      "First prize, Oncology Research Award for clinical research, AIIMS New Delhi, 2019",
+    ],
   },
   {
     id: "dr-bipin-walia-max-saket-neurosurgery",
@@ -499,7 +1274,21 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Neurosurgery / Spine Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/prof-col-dr-bipin-walia.webp",
+    about:
+      "Prof. (Col.) Dr. Bipin Walia is Chairman and Head of Neurosurgery and Neurospine at Max Healthcare, Saket, practising at Max Smart Super Speciality Hospital, Saket, New Delhi. His hospital profile records around 29 years of experience.\n\nHe trained at the Armed Forces Medical College, Pune, taking his MBBS and MS in General Surgery there, and completed his M.Ch in Neurosurgery at the All India Institute of Medical Sciences, New Delhi. His published areas of practice are neurosurgery, neurosciences and spine surgery.",
+    experience: "29+ years",
+    qualifications: [
+      "MBBS — Armed Forces Medical College, Pune",
+      "MS (General Surgery) — Armed Forces Medical College, Pune",
+      "M.Ch (Neurosurgery) — All India Institute of Medical Sciences, New Delhi",
+    ],
+    procedures: [
+      "Neurosurgery",
+      "Neurospine and Spine Surgery",
+      "Brain Tumour Surgery",
+      "Neurosciences",
+    ],
   },
   {
     id: "dr-kanika-batra-modi-max-saket-gynae-oncology",
@@ -508,7 +1297,19 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Surgical Oncology / Gynae Oncology / Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-kanika-batra-modi.jpg",
+    about:
+      "Dr. Kanika Batra Modi is Senior Consultant in Gynae-Oncology at Max Super Speciality Hospital, Saket. Her published areas are surgical oncology, gynaecologic oncology and robotic surgery.\n\nShe completed her senior residency and a gynae-oncology fellowship at Rajiv Gandhi Cancer Institute and Research Centre. Her further training includes an IGCS fellowship on full scholarship in 2016 under Neville Hacker at the Royal Hospital for Women, Sydney; a European Society of Gynaecologic Oncology fellowship on full scholarship in 2019 at Klinik Essen Mitte, Germany, under Prof. Andreas du Bois; and the CreDO international clinical-trials workshop run by Tata Memorial Hospital, Mumbai, in March 2020.",
+    procedures: [
+      "Gynaecologic oncology surgery",
+      "Robotic surgery for gynaecological cancer",
+      "Surgical oncology",
+    ],
+    awards: [
+      "Executive Council Member, AOGD Oncology Sub-committee, 2020–22",
+      "Executive Council Member, AOGIN India, 2019–21",
+      "First place, video presentation, AGOICON national conference of gynaecologic oncology, November 2021",
+    ],
   },
   {
     id: "dr-devavrat-arya-max-saket-lung-thoracic-oncology",
@@ -517,7 +1318,23 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Medical Oncology / Thoracic Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-devavrat-arya.jpg",
+    about:
+      "Dr. Devavrat Arya is Director of Medical Oncology at Max Super Speciality Hospital, Saket, with 20 years of experience. He also consults at Max Smart Super Speciality Hospital, Saket and the Max Institute of Cancer Care, Lajpat Nagar.\n\nHis published areas are thoracic oncology, breast cancer, head and neck oncology, musculoskeletal oncology, and molecular oncology and cancer genetics. Before Max he was Senior Consultant in Medical Oncology at the International Oncology Centre, Fortis Hospital Noida, from 2012 to 2017, and Honorary Associate Consultant at Action Cancer Hospital, Delhi, from 2011 to 2012. He is principal investigator on multiple trials and has national and international publications and presentations.",
+    experience: "20+ years",
+    qualifications: [
+      "DM (Medical Oncology), Gujarat Cancer and Research Institute, B J Medical College, Ahmedabad",
+      "MD (Internal Medicine), Government Medical College, Surat",
+      "MBBS, Maulana Azad Medical College, Delhi University",
+    ],
+    procedures: [
+      "Thoracic oncology",
+      "Breast cancer",
+      "Head and neck oncology",
+      "Musculoskeletal oncology",
+      "Molecular oncology and cancer genetics",
+      "Lung metastasis",
+    ],
   },
   {
     id: "dr-anant-kumar-max-saket-uro-oncology",
@@ -526,7 +1343,20 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Urology / Kidney Transplant / Robotic Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anant-kumar.jpg",
+    about:
+      "Dr. Anant Kumar is Chairman of Uro-Oncology, Robotics and Kidney Transplantation at Max Hospital, Saket and Max Hospital, Vaishali, with 35 years in urology and kidney transplantation.\n\nHis hospital profile records over 3,500 kidney transplants across 30 years, over 2,200 laparoscopic donor nephrectomies, and over 500 robotic operations in the last five years. He was Professor and Head of Urology and Kidney Transplantation at SGPGIMS, Lucknow, then Director of Urology, Renal Transplantation and Robotics at Fortis and at Apollo in Delhi NCR, and was a Consultant Urologist at Addenbrooke's Hospital, Cambridge, UK.",
+    experience: "35+ years",
+    qualifications: ["MBBS, King George Medical University, Lucknow"],
+    procedures: [
+      "Kidney transplantation",
+      "Robotic-assisted laparoscopic urology",
+      "Laparoscopic donor nephrectomy",
+      "Urological oncology",
+      "Renovascular hypertension",
+      "Laser urological surgery",
+      "Reconstructive urology",
+    ],
   },
   {
     id: "dr-sandeep-batra-max-saket-breast-cancer",
@@ -535,7 +1365,23 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "Medical Oncology / Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sandeep-batra.jpg",
+    about:
+      "Dr. Sandeep Batra is a medical oncologist at Max Super Speciality Hospital, Saket, and also consults at Max Hospital, Gurgaon. Max records 17 years of experience across a broad oncology practice — breast, thoracic, gynaecologic, uro-oncology, gastrointestinal and hepatobiliary, head and neck, neuro, musculoskeletal and haematology oncology, and molecular oncology and cancer genetics.\n\nHe was Senior Consultant in Medical Oncology at BLK Super Speciality Hospital from 2015 to 2017, Consultant in Medical Oncology and Haematology at Medanta – The Medicity from 2009 to 2015, and Associate Consultant at Artemis Health Institute, Gurgaon, in 2009.",
+    experience: "17+ years",
+    qualifications: ["DNB (Medical Oncology), National Board of Examinations, Delhi"],
+    procedures: [
+      "Breast cancer",
+      "Thoracic oncology",
+      "Gynaecologic oncology",
+      "Uro-oncology",
+      "Gastrointestinal and hepatobiliary oncology",
+      "Head and neck oncology",
+      "Neuro-oncology",
+      "Haematology oncology",
+      "Musculoskeletal oncology",
+      "Molecular oncology and cancer genetics",
+    ],
   },
   {
     id: "dr-subhash-gupta-max-saket-gi-surgery-oncology",
@@ -544,7 +1390,23 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "GI Surgery / Hepatobiliary & Transplant",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/prof-dr-subhash-gupta.webp",
+    about:
+      "Prof. (Dr.) Subhash Gupta is Group Chairman of the Centre for Liver and Biliary Sciences and GI Surgery at Max Healthcare, consulting at Max Super Speciality Hospital, Saket and Max Vaishali. Max records 37 years of experience and over 30 years in surgical gastroenterology, liver transplantation and hepatopancreaticobiliary oncology.\n\nMax describes the centre he chairs as one of the largest liver transplant centres in the world, with experience of over 3,000 transplants and around 200 transplants a year alongside a similar number of difficult HPB cases. He joined Max Healthcare in January 2017 and has published over 30 papers on aspects of living donor liver transplant in indexed journals.",
+    experience: "37+ years",
+    qualifications: [
+      "MD, All India Institute of Medical Sciences",
+      "MBBS, All India Institute of Medical Sciences",
+      "Fellow of the Royal College of Surgeons of Edinburgh",
+      "Fellow of the Royal College of Surgeons of Glasgow",
+    ],
+    procedures: [
+      "Living donor liver transplant",
+      "Hepatopancreaticobiliary oncology surgery",
+      "Biliary surgery",
+      "Gastrointestinal surgery",
+      "Robotic surgery",
+    ],
   },
   {
     id: "dr-sanjay-sachdeva-max-saket-ent-oncology",
@@ -553,7 +1415,19 @@ export const doctors: Doctor[] = [
     hospital: "Max Super Speciality Hospital, Saket",
     city: "Delhi",
     designation: "ENT / Head & Neck",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sanjay-sachdeva.webp",
+    about:
+      "Dr. Sanjay Sachdeva is Principal Director of ENT and Head and Neck Surgery at Max Healthcare, consulting at Max Super Speciality Hospital, Saket and Max Multi Speciality Centre, Panchsheel Park. Max records 40 years of experience.\n\nHe is co-author, with Dr. S. K. Kaluskar of the UK, of a book on the anterior skull base surgical approach being published by Elsevier India, and has been invited to national and international conferences as speaker, moderator, faculty and course director.",
+    experience: "40+ years",
+    qualifications: [
+      "MS (ENT), Maulana Azad Medical College, G.B. Pant Hospital and LNJP Hospital, New Delhi",
+      "MBBS, Maulana Azad Medical College, New Delhi",
+    ],
+    procedures: [
+      "Ear, nose and throat surgery",
+      "Head and neck surgery",
+      "Anterior skull base surgery",
+    ],
   },
 
   // Manipal Hospital, Dwarka, Delhi
@@ -564,7 +1438,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Cardiology / Interventional Cardiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ashish-gupta.webp",
   },
   {
     id: "dr-manish-sharma-manipal-dwarka-medical-oncology",
@@ -573,7 +1447,23 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "HOD & Consultant, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-manish-sharma.webp",
+    about:
+      "Dr. Manish Sharma is Head of Department and Consultant in Medical Oncology at Manipal Hospitals Dwarka, Delhi NCR, with a career spanning over 20 years of patient care, more than half of it in cancer therapy.\n\nHe graduated in medicine at PGIMS, Rohtak, took his DNB in Medicine at Safdarjung Hospital, New Delhi, and super-specialised in medical oncology at Rajiv Gandhi Cancer Institute, where his DNB in Medical Oncology was awarded with a gold medal. Manipal describes a practice built on accurate diagnosis and patient-centric care, and records numerous articles and publications in cancer care.",
+    experience: "20+ years",
+    qualifications: [
+      "DNB (Medical Oncology) — Gold Medallist",
+      "DNB (Medicine), Safdarjung Hospital, New Delhi",
+      "MBBS, PGIMS Rohtak",
+      "MNAMS",
+      "ECMO",
+    ],
+    procedures: [
+      "Medical oncology",
+      "Chemotherapy",
+      "Targeted therapy",
+      "Cancer therapy across solid tumours",
+    ],
   },
   {
     id: "dr-sudhir-dubey-manipal-dwarka-neurosurgery",
@@ -582,7 +1472,23 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Neurosurgery / Spine",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sudhir-dubey.png",
+    about:
+      "Dr. Sudhir Dubey is Chairman of Neurosciences at Medanta, Gurugram. His hospital profile records more than 10,000 neurosurgical operations over 22 years, and describes him as a pioneer and founder of minimally invasive spine surgery.\n\nHe took his MBBS at King George's Medical College, where he won the Sir Rupkishan Das Gold Medal in his final year, and trained in neurosurgery at the National Institute of Mental Health and Neurosciences, where he was awarded the Silver Jubilee Award. His surgical focus is endoportal brain surgery, endoscopic endonasal skull base surgery including pituitary surgery, and minimally invasive and percutaneous spine procedures.",
+    experience: "22+ years",
+    qualifications: ["M.Ch (Neurosurgery)", "M.B.B.S."],
+    procedures: [
+      "Endoportal brain surgery",
+      "Endoscopic endonasal skull base surgery",
+      "Pituitary surgery",
+      "Minimally invasive spine surgery",
+      "Percutaneous spine procedures",
+    ],
+    awards: [
+      "Young Neurosurgeon's Award, World Federation of Neurosurgical Societies — Medanta states he is the first and so far only recipient from India",
+      "International award for his work on brain tumours, Sydney, 2001",
+      "Silver Jubilee Award, NIMHANS",
+    ],
   },
   {
     id: "dr-ritu-jain-manipal-dwarka-gynae-oncology",
@@ -591,7 +1497,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Gynaecologic Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ritu-jain.webp",
   },
   {
     id: "dr-manish-dutt-manipal-dwarka-lung-thoracic-oncology",
@@ -600,7 +1506,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Medical Oncology; Thoracic / Lung Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-manish-dutt.webp",
   },
   {
     id: "dr-ashish-sabharwal-manipal-dwarka-uro-oncology",
@@ -609,7 +1515,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Urology / Uro-Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ashish-sabharwal.jpeg",
   },
   {
     id: "dr-manish-dutt-manipal-dwarka-breast-cancer",
@@ -618,7 +1524,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "Medical Oncology; Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-manish-dutt.webp",
   },
   {
     id: "dr-ashish-singhal-manipal-dwarka-gi-surgery-oncology",
@@ -627,7 +1533,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "GI / Surgical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-ashish-singhal.webp",
   },
   {
     id: "dr-anurag-srivastava-manipal-dwarka-ent-oncology",
@@ -636,7 +1542,7 @@ export const doctors: Doctor[] = [
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
     designation: "ENT / Head & Neck Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-anurag-srivastava.webp",
   },
 
   // Amrita Hospital, Faridabad
@@ -647,7 +1553,19 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Cardiology / Cardiac Sciences",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-vivek-chaturvedi.jpg",
+    about:
+      "Dr. Vivek Chaturvedi is Professor and Head of the Department of Cardiology at Amrita Hospital, Faridabad, with over 15 years of experience. Amrita describes him as a national authority in electrophysiology, radio-frequency ablation and complex device implantation.\n\nHe was previously Professor of Cardiology and in charge of arrhythmia and electrophysiology services at G. B. Pant Hospital (GIPMER). He is skilled in complex electrophysiology procedures — ablation of atrial fibrillation, ventricular tachycardia and focal atrial tachycardia using 3D electroanatomic mapping — and is also proficient in coronary, valvular and peripheral intervention. He has over 50 publications in international journals and books.",
+    experience: "15+ years",
+    procedures: [
+      "Cardiac electrophysiology",
+      "Ablation of atrial fibrillation",
+      "Ablation of ventricular tachycardia",
+      "Ablation of focal atrial tachycardia",
+      "3D electroanatomic mapping",
+      "Complex device implantation",
+      "Coronary, valvular and peripheral intervention",
+    ],
   },
   {
     id: "dr-saphalta-baghmar-amrita-faridabad-medical-oncology",
@@ -656,7 +1574,25 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Professor & Program Head, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-saphalta-baghmar.webp",
+    about:
+      "Dr. Saphalta Baghmar is Program Head at Amrita Hospital, Faridabad for head and neck cancer, neuro-oncology, breast cancer, gastrointestinal cancer, hepatobiliary cancer and genitourinary tract cancers. She trained for her DM in Medical Oncology at AIIMS, New Delhi, and is an alumna of MGM Medical College, Indore.\n\nShe previously served as faculty at the Institute of Liver and Biliary Sciences, New Delhi. Amrita records that she is trained in applying genetic and molecular knowledge to treatment — precision oncology — with particular expertise in targeted therapy and immunotherapy. She has over 30 publications and book chapters, has been faculty at national and international conferences and workshops, and has given more than 100 invited lectures.",
+    qualifications: ["DM (Medical Oncology), AIIMS New Delhi", "MBBS, MGM Medical College, Indore"],
+    procedures: [
+      "Breast cancer",
+      "Gastrointestinal cancer",
+      "Hepatobiliary cancer",
+      "Urogenital cancer",
+      "Head and neck cancer",
+      "Neuro-oncology",
+      "Targeted therapy",
+      "Immunotherapy",
+      "Precision oncology",
+    ],
+    awards: [
+      "Awarded for academic excellence in MBBS",
+      "Oral presentation award for research during medical oncology training",
+    ],
   },
   {
     id: "dr-suresh-sankhla-amrita-faridabad-neurosurgery",
@@ -665,7 +1601,7 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Neurosurgery / Neurology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-suresh-sankhla.jpg",
   },
   {
     id: "dr-neha-kumar-amrita-faridabad-gynae-oncology",
@@ -674,7 +1610,27 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Senior Consultant, Gynaecological Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-neha-kumar.webp",
+    about:
+      "Dr. Neha Kumar is Senior Consultant and robotic surgeon in the Department of Gynecologic Oncology at Amrita Hospital, Faridabad, with 17 years of experience in gynaecology and gynaecologic oncology.\n\nShe took her MBBS at Maulana Azad Medical College, New Delhi, her MS in obstetrics and gynaecology at University College of Medical Sciences, New Delhi, and her MCh in gynecologic oncology at Tata Memorial Centre, Mumbai. Her stated interests are cytoreductive surgery for ovarian cancer and advanced gynaecologic malignancy, peritoneal surface oncology with HIPEC, robotic surgery for gynaecological cancer and difficult gynaecological cases, and fertility-sparing management.",
+    experience: "17+ years",
+    qualifications: [
+      "MCh (Gynecologic Oncology), Tata Memorial Centre, Mumbai",
+      "MS (Obstetrics and Gynaecology), University College of Medical Sciences, New Delhi",
+      "MBBS, Maulana Azad Medical College, New Delhi",
+    ],
+    procedures: [
+      "Cytoreductive surgery for ovarian cancer and advanced gynaecologic malignancy",
+      "Peritoneal surface oncology and HIPEC",
+      "Robotic surgery for gynaecological cancer",
+      "Fertility-sparing management in gynaecologic malignancy",
+    ],
+    awards: [
+      "Dr. K. C. Goyal Award (Gold Medal), Best MBBS Student",
+      "Lt. Governor's Rolling Trophy, Best All Round MBBS Student",
+      "Gold medals in anatomy, physiology, microbiology, paediatrics and ENT",
+      "Kusum Pandit Award for best thesis in college",
+    ],
   },
   {
     id: "dr-prashant-mehta-amrita-faridabad-lung-thoracic-oncology",
@@ -683,7 +1639,30 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Program Head; Thoracic & Gynae Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-prashant-mehta.webp",
+    about:
+      "Dr. Prashant Mehta is a medical oncologist and bone marrow transplant physician at Amrita Hospital, Faridabad, and Program Head for lymphoid leukaemias, lymphomas, BMT and CAR T and cellular therapy, haploidentical transplants, thoracic and gynae oncology, sarcoma, melanoma and childhood cancers.\n\nHe took his DM fellowship in medical oncology and BMT at AIIMS, New Delhi, and is an alumnus of Maulana Azad Medical College, New Delhi, where he received the Meghna Krishna Baweja award for all-round excellence. Amrita credits him with the first bone marrow transplant, the first total body irradiation based transplant and the first matched unrelated donor transplant in the Faridabad region.\n\nHe has been principal investigator on more than 20 clinical trials and has more than 60 publications and book chapters, and is joint editor and web editor of the national oncology journal IJMPO. He is a founder member of the Science and Cost association, which works on improving access to cancer care in India.",
+    qualifications: [
+      "DM (Medical Oncology and BMT), AIIMS New Delhi",
+      "MD",
+      "MBBS, Maulana Azad Medical College, New Delhi",
+      "Visiting physician fellowship in BMT and cellular therapy",
+    ],
+    procedures: [
+      "Bone marrow transplant",
+      "CAR T-cell therapy",
+      "Haploidentical transplant",
+      "Total body irradiation based transplant",
+      "Lymphoid leukaemias — ALL and CLL",
+      "Lymphomas",
+      "Thoracic and gynae oncology",
+      "Sarcoma and melanoma",
+      "Childhood cancers",
+    ],
+    awards: [
+      "Prof. G. S. Bhattacharya award for best all-round oncologist in India, Indian Cooperative Oncology Network, 2021",
+      "Meghna Krishna Baweja award for all-round excellence, Maulana Azad Medical College",
+    ],
   },
   {
     id: "dr-shafiq-ahmed-amrita-faridabad-uro-oncology",
@@ -692,7 +1671,7 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Urology / Uro-Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-shafiq-ahmed.webp",
   },
   {
     id: "dr-shiveta-razdan-amrita-faridabad-breast-cancer",
@@ -701,7 +1680,21 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Breast Surgery / Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-shiveta-razdan.jpg",
+    about:
+      "Dr. Shiveta Razdan is Senior Consultant and Assistant Professor in the Breast Diseases Division at Amrita Hospital, Faridabad, and a trained breast oncoplastic surgeon.\n\nShe completed her undergraduate and postgraduate training in general surgery at Jammu University and her senior residency at Vardhman Mahavir Medical College and Safdarjung Hospital, New Delhi. She joined Medanta, Gurgaon as a breast fellow and worked there for seven years as Associate and then Attending Consultant, and trained as an oncoplastic breast fellow in the United Kingdom at South Tees Trust and James Cook Hospital, Middlesbrough, and Frimley Health Foundation Trust, Windsor.\n\nShe holds the Fellowship of the European Board of Breast Surgery awarded by UEMS, which Amrita describes as the highest standard of care in breast surgery in Europe. Her operative range covers oncoplastic breast surgery, sentinel node biopsy, partial and implant-based breast reconstruction, and the management of benign breast disease.",
+    qualifications: [
+      "Fellow of the European Board of Breast Surgery, UEMS, 2022",
+      "MRCS, Royal College of Surgeons of Edinburgh, 2018",
+      "MS (General Surgery), Jammu University, 2010",
+    ],
+    procedures: [
+      "Oncoplastic breast surgery",
+      "Sentinel node biopsy",
+      "Partial breast reconstruction",
+      "Implant-based breast reconstruction",
+      "Management of benign breast disease",
+    ],
   },
   {
     id: "dr-saphalta-baghmar-amrita-faridabad-gi-surgery-oncology",
@@ -710,7 +1703,25 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Medical Oncology; GI Cancers",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-saphalta-baghmar.webp",
+    about:
+      "Dr. Saphalta Baghmar is Program Head at Amrita Hospital, Faridabad for head and neck cancer, neuro-oncology, breast cancer, gastrointestinal cancer, hepatobiliary cancer and genitourinary tract cancers. She trained for her DM in Medical Oncology at AIIMS, New Delhi, and is an alumna of MGM Medical College, Indore.\n\nShe previously served as faculty at the Institute of Liver and Biliary Sciences, New Delhi. Amrita records that she is trained in applying genetic and molecular knowledge to treatment — precision oncology — with particular expertise in targeted therapy and immunotherapy. She has over 30 publications and book chapters, has been faculty at national and international conferences and workshops, and has given more than 100 invited lectures.",
+    qualifications: ["DM (Medical Oncology), AIIMS New Delhi", "MBBS, MGM Medical College, Indore"],
+    procedures: [
+      "Breast cancer",
+      "Gastrointestinal cancer",
+      "Hepatobiliary cancer",
+      "Urogenital cancer",
+      "Head and neck cancer",
+      "Neuro-oncology",
+      "Targeted therapy",
+      "Immunotherapy",
+      "Precision oncology",
+    ],
+    awards: [
+      "Awarded for academic excellence in MBBS",
+      "Oral presentation award for research during medical oncology training",
+    ],
   },
   {
     id: "dr-saphalta-baghmar-amrita-faridabad-ent-oncology",
@@ -719,7 +1730,25 @@ export const doctors: Doctor[] = [
     hospital: "Amrita Hospital",
     city: "Faridabad",
     designation: "Medical Oncology; Head & Neck Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-saphalta-baghmar.webp",
+    about:
+      "Dr. Saphalta Baghmar is Program Head at Amrita Hospital, Faridabad for head and neck cancer, neuro-oncology, breast cancer, gastrointestinal cancer, hepatobiliary cancer and genitourinary tract cancers. She trained for her DM in Medical Oncology at AIIMS, New Delhi, and is an alumna of MGM Medical College, Indore.\n\nShe previously served as faculty at the Institute of Liver and Biliary Sciences, New Delhi. Amrita records that she is trained in applying genetic and molecular knowledge to treatment — precision oncology — with particular expertise in targeted therapy and immunotherapy. She has over 30 publications and book chapters, has been faculty at national and international conferences and workshops, and has given more than 100 invited lectures.",
+    qualifications: ["DM (Medical Oncology), AIIMS New Delhi", "MBBS, MGM Medical College, Indore"],
+    procedures: [
+      "Breast cancer",
+      "Gastrointestinal cancer",
+      "Hepatobiliary cancer",
+      "Urogenital cancer",
+      "Head and neck cancer",
+      "Neuro-oncology",
+      "Targeted therapy",
+      "Immunotherapy",
+      "Precision oncology",
+    ],
+    awards: [
+      "Awarded for academic excellence in MBBS",
+      "Oral presentation award for research during medical oncology training",
+    ],
   },
 
   // Sanar International Hospitals, Gurugram
@@ -730,7 +1759,10 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Cardiology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-d-k-jhamb.jpg",
+    about:
+      "Dr. D. K. Jhamb is a cardiologist at Artemis Hospitals, Gurugram, working in cardiology and cardiac rehabilitation. He appears on Artemis's own cardiology roster.",
+    procedures: ["Cardiology", "Cardiac rehabilitation"],
   },
   {
     id: "dr-rakesh-kumar-sharma-sanar-international-medical-oncology",
@@ -739,7 +1771,7 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "HOD & Senior Consultant, Medical Oncology",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-rakesh-kumar-sharma.webp",
   },
   {
     id: "dr-harnarayan-singh-sanar-international-neurosurgery",
@@ -748,7 +1780,29 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Director & HOD, Neuro & Spine Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-harnarayan-singh.webp",
+    about:
+      "Dr. Harnarayan Singh is Director and Head of Neurosurgery at Sanar International Hospitals, Gurugram, with over 13 years of experience and more than 3,500 procedures recorded on his hospital profile.\n\nHe took his MBBS at University College of Medical Sciences, Delhi University, and both his MS in Surgery and his MCh in Neurosurgery at the Post Graduate Institute of Medical Education and Research, Chandigarh. His operative range covers neuro trauma, neuro-oncology, skull base surgery, spine tumour surgery, minimally invasive spine and brain surgery including keyhole approaches, cerebrovascular disorders, spinal instrumentation and functional neurosurgery.",
+    experience: "13+ years",
+    qualifications: [
+      "MCh (Neurosurgery), PGIMER Chandigarh",
+      "MS (Surgery), PGIMER Chandigarh",
+      "MBBS, University College of Medical Sciences, Delhi University",
+    ],
+    procedures: [
+      "Neuro trauma",
+      "Neuro-oncology",
+      "Skull base surgery",
+      "Spine tumour surgery",
+      "Minimally invasive spine surgery",
+      "Minimally invasive and keyhole brain surgery",
+      "Cerebrovascular disorders",
+      "Spinal instrumentation",
+      "Functional neurosurgery",
+    ],
+    awards: [
+      "Young Asian Neurosurgeon, 22nd Annual Meeting of the Japanese Congress for Brain Tumor Surgery",
+    ],
   },
   {
     id: "dr-sudip-raina-sanar-international-gynae-oncology",
@@ -757,7 +1811,7 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Oncology; Gynaecologic Cancer Services",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sudip-raina.webp",
   },
   {
     id: "dr-rakesh-kumar-sharma-sanar-international-lung-thoracic-oncology",
@@ -766,7 +1820,7 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Medical Oncology; Solid Tumors",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-rakesh-kumar-sharma.webp",
   },
   {
     id: "dr-sumit-sharma-sanar-international-uro-oncology",
@@ -775,7 +1829,7 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Director & HOD, Urology / Uro-Oncology / Andrology / Robotics",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-sumit-sharma.jpg",
   },
   {
     id: "dr-rakesh-kumar-sharma-sanar-international-breast-cancer",
@@ -784,7 +1838,7 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "Medical Oncology; Breast Cancer",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-rakesh-kumar-sharma.webp",
   },
   {
     id: "dr-vinay-kumar-shaw-sanar-international-gi-surgery-oncology",
@@ -793,7 +1847,40 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "GI / Minimal Access / Bariatric Surgery",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-vinay-shaw.webp",
+    about:
+      "Dr. Vinay Shaw is Senior Consultant and Head of GI, General, Minimal Access and Bariatric Surgery at Sanar International Hospitals, Gurugram, with over 18 years of experience and more than 10,000 cases treated according to his hospital profile.\n\nHe took his master's degree at GMCH and his senior residency and teaching experience at VMMC and Safdarjung Hospital. His further training includes the FIAGES course in minimal access surgery, a bariatric surgery course with Covidien, laparoscopic colorectal surgery training at the Ethicon Institute, laparoscopic upper GI surgery training at Bundang University in South Korea, and an international fellowship in bariatric and metabolic surgery.",
+    experience: "18+ years",
+    qualifications: [
+      "Master's degree, GMCH",
+      "Senior residency and teaching, VMMC and Safdarjung Hospital",
+      "FIAGES course in minimal access surgery",
+      "Course in bariatric surgery, Covidien",
+      "Laparoscopic colorectal surgery training, Ethicon Institute",
+      "Laparoscopic upper GI surgery training, Bundang University, South Korea",
+      "International fellowship in bariatric and metabolic surgery",
+    ],
+    procedures: [
+      "Bariatric and metabolic surgery",
+      "GI oncological surgery",
+      "Gastric cancer and GIST surgery",
+      "Colorectal cancer surgery",
+      "Hepatic resection",
+      "Gallbladder and pancreatic cancer surgery",
+      "Chronic pancreatitis surgery",
+      "Laparoscopic fundoplication",
+      "Laparoscopic Heller's myotomy",
+      "Bowel resection and ulcerative colitis surgery",
+      "Hernia repair",
+      "Piles, anal fistula and fissure surgery",
+    ],
+    awards: [
+      "Association of Surgeons of India",
+      "Indian Association of Gastro-Endosurgeons",
+      "Obesity and Metabolic Surgery Society of India",
+      "IASGO travel grant for academic work in South Korea",
+      "Reviewer, Indian Journal of Surgery",
+    ],
   },
   {
     id: "dr-kunal-nigam-sanar-international-ent-oncology",
@@ -802,7 +1889,24 @@ export const doctors: Doctor[] = [
     hospital: "Sanar International Hospitals",
     city: "Gurgaon",
     designation: "HOD & Consultant, ENT",
-    image: DOCTOR_PLACEHOLDER_IMAGE,
+    image: "/doctors/dr-kunal-nigam.jpg",
+    about:
+      "Dr. Kunal Nigam is Senior Consultant and Head of ENT, Cochlear Implant, Voice Disorders and Head and Neck Surgery at Sanar International Hospitals, Gurugram, with over a decade in the speciality.\n\nHe took his MBBS at Sri Ramachandra University, Chennai in 2011 and his MS in otorhinolaryngology at SRMSIMS, Bareilly. His certified training includes cochlear implantation and sialoendoscopy at Sir Ganga Ram Hospital, New Delhi in 2019, laser voice surgery, and advanced FESS and skull base surgery with Medtronic USA. He held a rhinology scholarship at the MAA ENT Foundation, Hyderabad in 2016.",
+    experience: "10+ years",
+    qualifications: [
+      "MS (Otorhinolaryngology), SRMSIMS, Bareilly",
+      "MBBS, Sri Ramachandra University, Chennai, 2011",
+    ],
+    procedures: [
+      "Cochlear implant — adult and paediatric",
+      "Voice disorders and laser surgery",
+      "Endoscopic skull base surgery",
+      "Airway and tracheal reconstruction",
+      "Head and neck surgery",
+      "Sino-nasal tumours",
+      "Vertigo and allergy",
+      "Paediatric ENT",
+    ],
   },
 
   // Top IVF / Fertility Specialists
@@ -990,7 +2094,233 @@ export const doctors: Doctor[] = [
     designation: "Ophthalmology",
     image: DOCTOR_PLACEHOLDER_IMAGE,
   },
+  // Additional AmalCure-sourced specialists
+  {
+    id: "dr-deepak-govil-indraprastha-apollo-hospital",
+    name: "Dr. Deepak Govil",
+    specialization: "GI Surgery & GI Oncology",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "Surgical Gastroenterologist",
+    image: "/doctors/dr-deepak-govil.jpg",
+    about:
+      "Dr. Deepak Govil is Senior Consultant in Surgical Gastroenterology at Indraprastha Apollo Hospitals, Sarita Vihar, where he has practised since 2004, with 41 years of experience overall.\n\nHis named areas are pancreato-biliary surgery, surgery for ulcerative colitis and colorectal surgery, within a broader practice covering gastrointestinal, general and hepato-biliary-pancreatic surgery and cancer surgery. He took his MBBS at AIIMS, New Delhi, followed by an MS in Surgery and a PhD in Gastrointestinal Surgery. Earlier posts include Dr. Ram Manohar Lohia Hospital, University College of Medical Sciences and the Pushpawati Singhania Research Institute. He consults in English and Hindi.",
+    experience: "41+ years",
+    qualifications: [
+      "Ph.D. (Gastrointestinal Surgery)",
+      "M.S. (General Surgery)",
+      "M.B.B.S., AIIMS New Delhi",
+    ],
+    procedures: [
+      "Pancreato-biliary surgery",
+      "Colorectal surgery",
+      "Surgery for ulcerative colitis",
+      "Gastrointestinal cancer surgery",
+      "Hepato-biliary-pancreatic surgery",
+    ],
+    workExperience: [
+      "Association of Surgeons of India",
+      "Indian Association of Surgical Gastroenterology — former national executive member",
+      "Indian Society of Gastroenterology",
+      "Indian Association of Gastrointestinal Endo Surgeons",
+      "Indian Medical Association",
+      "Association of Colon and Rectal Surgeons of India",
+    ],
+  },
+  {
+    id: "dr-krishna-s-iyer-fortis-escorts-heart-institute",
+    name: "Dr. Krishna S Iyer",
+    specialization: "Cardiology",
+    hospital: "Fortis Escorts Heart Institute",
+    city: "Delhi",
+    designation: "Pediatric Cardiac Surgeon",
+    image: "/doctors/dr-krishna-s-iyer.webp",
+    about:
+      "Dr. Krishna S Iyer — published by Fortis as Dr. Krishna Subramony Iyer — is Chairman and Head of Paediatric and Congenital Heart Surgery at Fortis Escorts Heart Institute, New Delhi. His hospital profile records surgery on over 10,000 babies, children and adults with congenital heart disease.\n\nIn 1995 he established northern India's first dedicated paediatric cardiac care programme at what was then Escorts Heart Institute Research Centre, a programme Fortis describes as having become a benchmark for paediatric cardiac care in India and neighbouring South East Asian countries.\n\nHis operative range covers arterial switch and double switch procedures, TAPVC repair, Fontan and Fontan-type surgery, correction of Tetralogy of Fallot, DORV, Truncus, Senning operations, conduit repairs, and single and multi-stage correction of complex congenital conditions.",
+    experience: "46+ years",
+    procedures: [
+      "Arterial switch operation",
+      "Double switch procedure",
+      "TAPVC repair",
+      "Fontan and Fontan-type surgery",
+      "Correction of Tetralogy of Fallot",
+      "DORV correction",
+      "Truncus repair",
+      "Senning operation",
+      "Conduit repair",
+      "Single-stage and multi-stage correction of complex congenital heart disease",
+    ],
+    awards: [
+      "Institute Gold Medal, Best Graduate of the Year at MBBS examination",
+      "Sorel Catherine Friemna Prize for proficiency in Paediatrics",
+      "Pfizer Postgraduate Medical Award, Gold Medal and Scroll of Honour",
+      "Hira Lal Gold Medal, best postgraduate in General Surgery",
+      "Doppler Award for best paper, Sixth International Symposium on Echocardiography in Cardiac Surgery, Washington D.C., 1994",
+      "Paul Harris Fellow, Rotary International Foundation, for humanitarian services for children",
+    ],
+  },
+  {
+    id: "dr-p-l-dhingra-indraprastha-apollo-hospital",
+    name: "Dr. P L Dhingra",
+    specialization: "ENT, Head & Neck",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "ENT Surgeon",
+    image: "/doctors/dr-p-l-dhingra.jpg",
+    about:
+      "Dr. P L Dhingra is an ENT specialist at Apollo Hospitals, Delhi, and has practised ear, nose, throat and head and neck surgery since 1965 — 61 years in the speciality. His stated special interests are ear surgery for the alleviation of deafness, functional endoscopic sinus surgery, microsurgery of the larynx for voice disorders, and LASER surgery.\n\nHe has held the post of Director Professor and Head at teaching institutions, training students of MBBS, DLO and MS (ENT). He trained in microsurgery of the ear in the UK, and in endoscopic sinus surgery and lasers in Germany.\n\nHe is the author of Diseases of Ear, Nose and Throat, published by Elsevier and now in its fourth edition, and has published more than 40 articles in national and international journals. He is President of the Delhi branch of the Association of Otolaryngologists of India.",
+    experience: "61+ years",
+    qualifications: ["M.S.", "DLO", "M.B.B.S.", "MNAMS, National Academy of Medical Sciences"],
+    procedures: [
+      "Ear surgery for the alleviation of deafness",
+      "Functional endoscopic sinus surgery (FESS)",
+      "Microsurgery of the larynx for voice disorders",
+      "LASER surgery of the ear, nose and throat",
+      "Head and neck surgery",
+    ],
+  },
+  {
+    id: "dr-prita-trehan-indraprastha-apollo-hospital",
+    name: "Dr. Prita Trehan",
+    specialization: "Neonatology",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "Neonatologist",
+    image: "/doctors/dr-prita-trehan.jpg",
+    about:
+      "Dr. Prita Trehan is a paediatrician at Apollo Hospitals, Delhi, with 47 years in child health. Her hospital profile lists immunisation, paediatric endoscopy, nebulisation therapy and growth hormone therapy among her areas, alongside care for children with congenital heart disease.\n\nApollo describes a practice that covers both the treatment of illness and preventive care, including guidance for parents on nutrition, growth monitoring and overall child development.",
+    experience: "47+ years",
+    qualifications: ["M.D. (Paediatrics)", "M.B.B.S."],
+    procedures: [
+      "Immunisation",
+      "Paediatric endoscopy",
+      "Nebulisation therapy",
+      "Growth hormone therapy",
+      "Growth monitoring and nutrition guidance",
+    ],
+  },
+  {
+    id: "dr-rakesh-mahajan-indraprastha-apollo-hospital",
+    name: "Dr. Rakesh Mahajan",
+    specialization: "Vascular Surgery",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "Vascular Surgeon",
+    image: "/doctors/dr-rakesh-mahajan.jpg",
+    about:
+      "Dr. Rakesh Mahajan has been Senior Consultant in Vascular Surgery at Indraprastha Apollo Hospital, New Delhi, since September 2004, and has 36 years of experience. He was formerly a Consultant Surgeon at Royal Gwent Hospital in the UK.\n\nApollo credits him with developing its vascular surgery department in Delhi into one of its most trusted centres for the speciality. His stated areas are treatment of varicose veins with laser or radio-frequency ablation, surgery for excessive sweating and Raynaud's syndrome, treatment of mesenteric and renal ischaemia, and management of pain and cramps in the limbs.\n\nHe took his MBBS in 1984 and MS in Surgery in 1989 at AIIMS, New Delhi, obtained FRCS at Glasgow in 1994 and FRCS (Gen) in the UK in 2002, and holds a UK Certificate of Completion of Specialist Training from 2002.",
+    experience: "36+ years",
+    qualifications: [
+      "CCST (Specialist Training Authority, UK), 2002",
+      "FRCS (Gen), Royal Colleges of Surgeons, UK, 2002",
+      "FRCS, Royal College of Physicians and Surgeons, Glasgow, 1994",
+      "M.S. (Surgery), AIIMS New Delhi, 1989",
+      "M.B.B.S., AIIMS New Delhi, 1984",
+    ],
+    procedures: [
+      "Laser and radio-frequency ablation for varicose veins",
+      "Surgery for excessive sweating",
+      "Surgery for Raynaud's syndrome",
+      "Treatment of mesenteric and renal ischaemia",
+      "Management of limb pain and cramps",
+    ],
+  },
+  {
+    id: "dr-shakti-bhan-khanna-indraprastha-apollo-hospital",
+    name: "Dr. Shakti Bhan Khanna",
+    specialization: "IVF & Infertility",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "IVF Specialist",
+    image: "/doctors/dr-shakti-bhan-khanna.jpg",
+    about:
+      "Dr. Shakti Bhan Khanna is a Senior Consultant obstetrician and gynaecologist at Indraprastha Apollo Hospital, where she has worked since December 1995, with over 61 years of experience in women's health. She was Assistant Professor through to Professor at Government Medical College, Srinagar, for 30 years.\n\nHer practice covers gynae oncology, gynae endocrinology, infertility, high-risk pregnancy and pelvic reconstructive surgery. Apollo records that she developed the surgical technique known as Khanna's Sling Operation for vault prolapse. She has been a recognised postgraduate teacher since 1985 for the universities of Kashmir, Jammu and Delhi, and for AIIMS and Bombay. She consults in English and Hindi.",
+    experience: "61+ years",
+    qualifications: [
+      "M.D.",
+      "M.B.B.S.",
+      "Postgraduate teacher since 1985 for the universities of Kashmir, Jammu, Delhi, AIIMS and Bombay",
+    ],
+    procedures: [
+      "Infertility treatment",
+      "High-risk pregnancy care",
+      "Gynae oncology",
+      "Gynae endocrinology",
+      "Pelvic reconstructive surgery",
+      "Surgery for vault prolapse",
+    ],
+    workExperience: [
+      'Annual Oration, "Fetal Origin of Adult Diseases", 2004',
+      "Achanta Lakshmipathi Oration, National Academy of Medical Sciences, 2005–06",
+    ],
+  },
+  {
+    id: "dr-subhash-wangnoo-indraprastha-apollo-hospital",
+    name: "Dr. Subhash Wangnoo",
+    specialization: "Endocrinology & Diabetes",
+    hospital: "Indraprastha Apollo Hospital",
+    city: "Delhi",
+    designation: "Endocrinologist",
+    image: "/doctors/dr-subhash-wangnoo.jpg",
+    about:
+      "Dr. Subhash Wangnoo is an endocrinologist at Indraprastha Apollo Hospitals with 45 years in practice. He established and heads the Apollo Centre for Obesity, Diabetes and Endocrinology (ACODE).\n\nHe treats diabetes mellitus, thyroid disorders and osteoporosis, with insulin therapy, thyroid hormone replacement and bone density treatment among his stated treatments, and Apollo describes an approach built on personalised diabetes management and research-backed treatment. He has been involved in teaching and training DNB Endocrinology students for more than eight years, and was formerly honorary endocrinologist to the President of India. He consults in English and Hindi.",
+    experience: "45+ years",
+    qualifications: ["D.M.", "M.D. (Medicine)", "FRCP", "M.B.B.S."],
+    procedures: [
+      "Diabetes mellitus management",
+      "Insulin therapy",
+      "Thyroid disorders and thyroid hormone replacement",
+      "Osteoporosis and bone density treatment",
+    ],
+  },
+  {
+    id: "dr-y-k-mishra-manipal-hospitals-dwarka",
+    name: "Dr. Y K Mishra",
+    specialization: "Cardiology",
+    hospital: "Manipal Hospitals Dwarka",
+    city: "Delhi",
+    designation: "Cardiac Surgeon",
+    image: "/doctors/dr-y-k-mishra.webp",
+    about:
+      "Dr. Y K Mishra — published by Manipal as Dr. Yugal Kishore Mishra — is Chief of Clinical Services, Head of the Department of Cardiac Sciences and Chief Cardiovascular Surgeon at Manipal Hospitals, Delhi, and Chairman of the Manipal Institute of Cardiac Sciences.\n\nHe completed a fellowship in cardiovascular surgery at the Thoracic Centre, University Hospital Uppsala, Sweden, and is a Fellow of the Association of Thoracic and Cardiovascular Surgeons of India. Manipal describes his expertise in minimally invasive and robotic cardiac procedures. He is the founder of the Indian College of Cardiology.",
+    experience: "44+ years",
+    qualifications: [
+      "Fellowship in Cardiovascular Surgery, Thoracic Centre, University Hospital Uppsala, Sweden",
+      "Fellow, Association of Thoracic and Cardiovascular Surgeons of India",
+      "Honoris Causa Doctorate (Doctor of Science)",
+    ],
+    procedures: [
+      "Minimally invasive cardiac surgery",
+      "Robotic cardiac surgery",
+      "Coronary artery bypass surgery",
+      "Heart valve repair and replacement",
+    ],
+    awards: [
+      "International Society for Minimally Invasive Cardiac Surgery",
+      "The Society of Thoracic Surgeons",
+      "Asian Society for Cardiovascular and Thoracic Surgery",
+      "Life Member, Cardiological Society of India",
+      "Rashtriya Ratan Award, International Study Circle, 2005",
+      "Lifetime Achievement Award, World Congress on Clinical and Preventive Cardiology, 2006",
+      "Honoris Causa Doctorate (Doctor of Science), conferred by the Governor of Madhya Pradesh",
+    ],
+  },
 ];
+
+export function getDoctorById(id: string): Doctor | undefined {
+  return doctors.find((d) => d.id === id);
+}
+
+export function getRelatedDoctors(doctor: Doctor, limit = 3): Doctor[] {
+  const sameHospital = doctors.filter((d) => d.id !== doctor.id && d.hospital === doctor.hospital);
+  const sameSpecialization = doctors.filter(
+    (d) =>
+      d.id !== doctor.id &&
+      d.hospital !== doctor.hospital &&
+      d.specialization === doctor.specialization,
+  );
+  return [...sameHospital, ...sameSpecialization].slice(0, limit);
+}
 
 export const hospitals: Hospital[] = [
   {

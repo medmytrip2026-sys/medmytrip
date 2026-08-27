@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Award,
@@ -195,16 +196,13 @@ export function Doctors({
                 )}
               </div>
               <div className="pt-2 flex gap-2">
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDoctor(d);
-                  }}
+                <Link
+                  href={`/doctors/${d.id}`}
+                  onClick={(e) => e.stopPropagation()}
                   className="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-bold text-primary transition-all hover:bg-primary/10"
                 >
                   View Full Profile
-                </button>
+                </Link>
                 <a
                   href={handleWhatsAppBooking(d.name, d.specialization, d.hospital, d.city)}
                   target="_blank"
@@ -306,6 +304,12 @@ export function Doctors({
                     >
                       <CalendarCheck className="h-5 w-5" /> Book Free Consultation
                     </a>
+                    <Link
+                      href={`/doctors/${selectedDoctor.id}`}
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border py-3 text-sm font-bold text-foreground transition-all hover:bg-muted/50"
+                    >
+                      Open Full Profile Page
+                    </Link>
                   </div>
 
                   {/* Right Column - Qualifications & Details */}
@@ -316,7 +320,7 @@ export function Doctors({
                         <h4 className="text-sm font-extrabold uppercase tracking-widest text-primary flex items-center gap-2">
                           <Sparkles className="h-4 w-4 text-secondary" /> About Specialist
                         </h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                           {selectedDoctor.about}
                         </p>
                       </div>
