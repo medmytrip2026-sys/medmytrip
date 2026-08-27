@@ -15,7 +15,11 @@ export function FAQ() {
         <Reveal>
           <SectionHeading
             eyebrow="FAQ"
-            title={<>Answers to your <span className="text-primary">most common questions</span></>}
+            title={
+              <>
+                Answers to your <span className="text-primary">most common questions</span>
+              </>
+            }
             description="Still unsure? WhatsApp us anytime for a personal response in English or French."
           />
         </Reveal>
@@ -53,7 +57,9 @@ export function FAQ() {
                       transition={{ duration: 0.25 }}
                       className="overflow-hidden"
                     >
-                      <p className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                      <p className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">
+                        {f.a}
+                      </p>
                     </motion.div>
                   )}
                 </AnimatePresence>

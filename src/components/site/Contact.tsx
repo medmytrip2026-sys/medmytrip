@@ -38,7 +38,7 @@ export function Contact() {
             "Content-Type": "text/plain;charset=utf-8",
           },
           body: JSON.stringify(form),
-        }
+        },
       );
 
       const data = await response.json();
@@ -69,7 +69,13 @@ export function Contact() {
   };
 
   const details = [
-    { icon: MessageCircle, label: "WhatsApp", value: contactInfo.phone, href: `https://wa.me/${contactInfo.whatsappIndia}`, accent: "whatsapp" },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: contactInfo.phone,
+      href: `https://wa.me/${contactInfo.whatsappIndia}`,
+      accent: "whatsapp",
+    },
     { icon: Phone, label: "Phone", value: contactInfo.phone, href: `tel:${contactInfo.phone}` },
     { icon: Mail, label: "Email", value: contactInfo.email, href: `mailto:${contactInfo.email}` },
     { icon: MapPin, label: "Office Address", value: contactInfo.address },
@@ -80,7 +86,11 @@ export function Contact() {
       <Reveal>
         <SectionHeading
           eyebrow="Get In Touch"
-          title={<>Book a <span className="text-primary">free consultation</span> today</>}
+          title={
+            <>
+              Book a <span className="text-primary">free consultation</span> today
+            </>
+          }
           description="Share your reports and our medical team will respond within 24 hours."
         />
       </Reveal>
@@ -96,20 +106,49 @@ export function Contact() {
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <Field label="Full Name" required>
-              <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputCls} placeholder="John Smith" />
+              <input
+                required
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                className={inputCls}
+                placeholder="John Smith"
+              />
             </Field>
             <Field label="Country">
-              <input value={form.country} onChange={(e) => setForm({ ...form, country: e.target.value })} className={inputCls} placeholder="e.g. United Kingdom, Canada, France" />
+              <input
+                value={form.country}
+                onChange={(e) => setForm({ ...form, country: e.target.value })}
+                className={inputCls}
+                placeholder="e.g. United Kingdom, Canada, France"
+              />
             </Field>
             <Field label="Phone / WhatsApp" required>
-              <input required type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputCls} placeholder="+1 XXX XXX XXXX" />
+              <input
+                required
+                type="tel"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                className={inputCls}
+                placeholder="+1 XXX XXX XXXX"
+              />
             </Field>
             <Field label="Email">
-              <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputCls} placeholder="you@email.com" />
+              <input
+                type="email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className={inputCls}
+                placeholder="you@email.com"
+              />
             </Field>
             <div className="sm:col-span-2">
               <Field label="Treatment Needed">
-                <input value={form.treatment} onChange={(e) => setForm({ ...form, treatment: e.target.value })} className={inputCls} placeholder="e.g. Cardiac bypass, Oncology consultation" />
+                <input
+                  value={form.treatment}
+                  onChange={(e) => setForm({ ...form, treatment: e.target.value })}
+                  className={inputCls}
+                  placeholder="e.g. Cardiac bypass, Oncology consultation"
+                />
               </Field>
             </div>
             {/* <div className="sm:col-span-2">
@@ -123,7 +162,13 @@ export function Contact() {
             </div> */}
             <div className="sm:col-span-2">
               <Field label="Message">
-                <textarea rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className={`${inputCls} resize-none`} placeholder="Tell us briefly about your medical condition..." />
+                <textarea
+                  rows={4}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                  className={`${inputCls} resize-none`}
+                  placeholder="Tell us briefly about your medical condition..."
+                />
               </Field>
             </div>
           </div>
@@ -142,7 +187,8 @@ export function Contact() {
               </>
             ) : (
               <>
-                Send Enquiry <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                Send Enquiry{" "}
+                <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </>
             )}
           </button>
@@ -160,23 +206,39 @@ export function Contact() {
             <div className="mt-4 space-y-3">
               {details.map((d, k) => {
                 const Icon = d.icon;
-                const wrapperCls = "flex items-start gap-3 rounded-2xl border border-border p-3 transition-colors hover:border-primary/40 hover:bg-primary/5";
-                const iconCls = d.accent === "whatsapp"
-                  ? "grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[color:var(--whatsapp)]/10 text-[color:var(--whatsapp)]"
-                  : "grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary";
+                const wrapperCls =
+                  "flex items-start gap-3 rounded-2xl border border-border p-3 transition-colors hover:border-primary/40 hover:bg-primary/5";
+                const iconCls =
+                  d.accent === "whatsapp"
+                    ? "grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[color:var(--whatsapp)]/10 text-[color:var(--whatsapp)]"
+                    : "grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary";
                 const content = (
                   <>
-                    <span className={iconCls}><Icon className="h-5 w-5" /></span>
+                    <span className={iconCls}>
+                      <Icon className="h-5 w-5" />
+                    </span>
                     <div className="min-w-0">
-                      <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">{d.label}</p>
+                      <p className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
+                        {d.label}
+                      </p>
                       <p className="truncate text-sm font-semibold text-foreground">{d.value}</p>
                     </div>
                   </>
                 );
                 return d.href ? (
-                  <a key={k} href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className={wrapperCls}>{content}</a>
+                  <a
+                    key={k}
+                    href={d.href}
+                    target={d.href.startsWith("http") ? "_blank" : undefined}
+                    rel="noopener noreferrer"
+                    className={wrapperCls}
+                  >
+                    {content}
+                  </a>
                 ) : (
-                  <div key={k} className={wrapperCls}>{content}</div>
+                  <div key={k} className={wrapperCls}>
+                    {content}
+                  </div>
                 );
               })}
             </div>
@@ -202,7 +264,15 @@ export function Contact() {
 const inputCls =
   "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/15 transition-all";
 
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
+function Field({
+  label,
+  required,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
   return (
     <label className="block">
       <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">

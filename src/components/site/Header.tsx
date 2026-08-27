@@ -83,7 +83,11 @@ export function Header() {
 
           <nav className="hidden items-center gap-1 lg:flex">
             {links.map((l) => {
-              const isActive = l.to ? (l.to === "/" ? pathname === "/" : pathname.startsWith(l.to)) : false;
+              const isActive = l.to
+                ? l.to === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(l.to)
+                : false;
               return l.to ? (
                 <Link
                   key={l.label}
@@ -137,7 +141,11 @@ export function Header() {
             >
               <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4">
                 {links.map((l) => {
-                  const isActive = l.to ? (l.to === "/" ? pathname === "/" : pathname.startsWith(l.to)) : false;
+                  const isActive = l.to
+                    ? l.to === "/"
+                      ? pathname === "/"
+                      : pathname.startsWith(l.to)
+                    : false;
                   return l.to ? (
                     <Link
                       key={l.label}

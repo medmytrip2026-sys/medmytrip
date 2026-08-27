@@ -13,14 +13,21 @@ export function Services() {
       <Reveal>
         <SectionHeading
           eyebrow="Our Services"
-          title={<>Everything you need — <span className="text-primary">under one roof</span></>}
+          title={
+            <>
+              Everything you need — <span className="text-primary">under one roof</span>
+            </>
+          }
           description="End-to-end medical travel support so you can focus entirely on recovery."
         />
       </Reveal>
 
       <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((s, i) => {
-          const Icon = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[s.icon] ?? Icons.CheckCircle2;
+          const Icon =
+            (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[
+              s.icon
+            ] ?? Icons.CheckCircle2;
           return (
             <motion.article
               key={s.title}
@@ -45,7 +52,9 @@ export function Services() {
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="text-base font-bold text-foreground">{s.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {s.description}
+                </p>
                 <a
                   href="#contact"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-transform hover:translate-x-1"

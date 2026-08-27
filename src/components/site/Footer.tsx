@@ -29,8 +29,8 @@ export function Footer() {
               <MedMyTripLogo className="h-10 w-[200px]" />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              Connecting patients worldwide — across English-speaking and French-speaking countries —
-              with India's leading hospitals, doctors and end-to-end medical travel support.
+              Connecting patients worldwide — across English-speaking and French-speaking countries
+              — with India's leading hospitals, doctors and end-to-end medical travel support.
             </p>
             <div className="mt-5 flex gap-2">
               {[Facebook, Instagram, Twitter, Linkedin, Youtube].map((I, k) => (

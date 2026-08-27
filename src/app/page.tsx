@@ -33,27 +33,28 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "MedMyTrip",
-    "alternateName": "Med My Trip",
-    "url": "https://healthbridge.in",
-    "logo": "https://healthbridge.in/favicon.ico",
-    "description": "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
-    "address": {
+    name: "MedMyTrip",
+    alternateName: "Med My Trip",
+    url: "https://healthbridge.in",
+    logo: "https://healthbridge.in/favicon.ico",
+    description:
+      "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": contactInfo.address.split(",")[0],
-      "addressLocality": "New Delhi",
-      "addressRegion": "Delhi",
-      "postalCode": "110025",
-      "addressCountry": "IN"
+      streetAddress: contactInfo.address.split(",")[0],
+      addressLocality: "New Delhi",
+      addressRegion: "Delhi",
+      postalCode: "110025",
+      addressCountry: "IN",
     },
-    "contactPoint": [
+    contactPoint: [
       {
         "@type": "ContactPoint",
-        "telephone": `+${contactInfo.whatsappIndia}`,
-        "contactType": "WhatsApp Support India",
-        "availableLanguage": ["English", "Bengali", "Hindi"]
-      }
-    ]
+        telephone: `+${contactInfo.whatsappIndia}`,
+        contactType: "WhatsApp Support India",
+        availableLanguage: ["English", "Bengali", "Hindi"],
+      },
+    ],
   };
 
   return (

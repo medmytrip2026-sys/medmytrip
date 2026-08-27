@@ -257,7 +257,11 @@ export function Doctors({
                   <div className="space-y-4">
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-soft border border-border/50 bg-muted">
                       <img
-                        src={typeof selectedDoctor.image === "string" ? selectedDoctor.image : selectedDoctor.image.src}
+                        src={
+                          typeof selectedDoctor.image === "string"
+                            ? selectedDoctor.image
+                            : selectedDoctor.image.src
+                        }
                         alt={selectedDoctor.name}
                         className="w-full h-full object-cover"
                       />
@@ -281,7 +285,9 @@ export function Doctors({
                         <div className="flex items-center gap-3 text-sm">
                           <Award className="h-5 w-5 text-primary shrink-0" />
                           <div>
-                            <p className="text-xs text-muted-foreground font-semibold">EXPERIENCE</p>
+                            <p className="text-xs text-muted-foreground font-semibold">
+                              EXPERIENCE
+                            </p>
                             <p className="font-bold text-foreground">{selectedDoctor.experience}</p>
                           </div>
                         </div>

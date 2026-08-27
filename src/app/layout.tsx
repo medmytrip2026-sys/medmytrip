@@ -24,12 +24,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "MedMyTrip — Medical Treatment in India for International Patients",
-  description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
-  keywords: ["medical tourism India", "international patients", "medical tourism for English speaking countries", "medical tourism for French speaking countries", "India hospitals", "medical visa India", "MedMyTrip"],
+  description:
+    "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
+  keywords: [
+    "medical tourism India",
+    "international patients",
+    "medical tourism for English speaking countries",
+    "medical tourism for French speaking countries",
+    "India hospitals",
+    "medical visa India",
+    "MedMyTrip",
+  ],
   metadataBase: new URL("https://healthbridge.in"),
   openGraph: {
     title: "MedMyTrip — Medical Treatment in India for International Patients",
-    description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
+    description:
+      "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
     url: "/",
     siteName: "MedMyTrip",
     images: [
@@ -46,8 +56,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MedMyTrip — Medical Treatment in India for International Patients",
-    description: "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
-    images: ["https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9f3f0933-ba7c-4c70-93c1-92906cf4031d/id-preview-47e7a4ac--378b0401-c324-4b40-9a54-2f232ed9ec10.lovable.app-1783948303023.png"],
+    description:
+      "MedMyTrip connects patients from English-speaking and French-speaking countries worldwide to India's top hospitals and doctors. Multilingual support, visa assistance, airport pickup and transparent cost estimates.",
+    images: [
+      "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9f3f0933-ba7c-4c70-93c1-92906cf4031d/id-preview-47e7a4ac--378b0401-c324-4b40-9a54-2f232ed9ec10.lovable.app-1783948303023.png",
+    ],
   },
   icons: {
     icon: [
@@ -63,14 +76,12 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${plusJakartaSans.variable} ${ibmPlexMono.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${plusJakartaSans.variable} ${ibmPlexMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

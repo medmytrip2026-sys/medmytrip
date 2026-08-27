@@ -20,7 +20,11 @@ export function Testimonials() {
       <Reveal>
         <SectionHeading
           eyebrow="Patient Stories"
-          title={<>Real journeys, <span className="text-primary">real recoveries</span></>}
+          title={
+            <>
+              Real journeys, <span className="text-primary">real recoveries</span>
+            </>
+          }
           description="Hear from patients around the world who trusted us with their care in India."
         />
       </Reveal>
@@ -40,7 +44,10 @@ export function Testimonials() {
                 key={t.name}
                 className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-lift"
               >
-                <Quote className="absolute right-6 top-6 h-20 w-20 text-primary/5" strokeWidth={1.5} />
+                <Quote
+                  className="absolute right-6 top-6 h-20 w-20 text-primary/5"
+                  strokeWidth={1.5}
+                />
                 <div className="flex items-center">
                   <img
                     src={t.image}

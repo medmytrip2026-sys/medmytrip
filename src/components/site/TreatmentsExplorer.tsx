@@ -27,7 +27,8 @@ export function TreatmentsExplorer() {
   }, [searchParams]);
 
   const grouped = useMemo(
-    () => categories.map((c) => ({ category: c, items: treatments.filter((t) => t.category === c) })),
+    () =>
+      categories.map((c) => ({ category: c, items: treatments.filter((t) => t.category === c) })),
     [],
   );
 
@@ -72,8 +73,9 @@ export function TreatmentsExplorer() {
         >
           {activeItems.map((t, i) => {
             const Icon =
-              (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[t.icon] ??
-              Icons.Activity;
+              (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[
+                t.icon
+              ] ?? Icons.Activity;
             return (
               <motion.div
                 id={t.slug}
@@ -101,8 +103,12 @@ export function TreatmentsExplorer() {
                 </div>
                 <div className="mt-auto flex items-center justify-between gap-2 pt-2">
                   <div>
-                    <p className="text-[11px] font-semibold text-muted-foreground">Packages Starting from</p>
-                    <p className="text-sm font-extrabold text-primary">${t.startingPrice.toLocaleString()}</p>
+                    <p className="text-[11px] font-semibold text-muted-foreground">
+                      Packages Starting from
+                    </p>
+                    <p className="text-sm font-extrabold text-primary">
+                      ${t.startingPrice.toLocaleString()}
+                    </p>
                   </div>
                   <a
                     href={whatsappLink(t.name)}

@@ -12,14 +12,24 @@ export function WhyChooseUs() {
       <Reveal>
         <SectionHeading
           eyebrow="Why Choose Us"
-          title={<>Your trusted bridge to <span className="text-primary">world-class care in India</span></>}
+          title={
+            <>
+              Your trusted bridge to <span className="text-primary">world-class care in India</span>
+            </>
+          }
           description="A personalised medical concierge for English and French-speaking patients — from your first WhatsApp message to a safe return home."
         />
       </Reveal>
 
       <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {whyChooseUs.map((f, i) => {
-          const Icon = (Icons as unknown as Record<string, React.ComponentType<{ className?: string; strokeWidth?: number }>>)[f.icon] ?? Icons.Check;
+          const Icon =
+            (
+              Icons as unknown as Record<
+                string,
+                React.ComponentType<{ className?: string; strokeWidth?: number }>
+              >
+            )[f.icon] ?? Icons.Check;
           return (
             <motion.div
               key={f.title}

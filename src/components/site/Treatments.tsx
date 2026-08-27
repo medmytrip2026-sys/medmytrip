@@ -12,19 +12,29 @@ export function Treatments() {
   const featured = treatments.filter((t) => t.featured);
 
   return (
-    <section id="treatments" className="relative overflow-hidden bg-gradient-to-b from-background via-muted/30 to-background py-20 lg:py-28">
+    <section
+      id="treatments"
+      className="relative overflow-hidden bg-gradient-to-b from-background via-muted/30 to-background py-20 lg:py-28"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <SectionHeading
             eyebrow="Treatments"
-            title={<>Specialised care across <span className="text-primary">every discipline</span></>}
+            title={
+              <>
+                Specialised care across <span className="text-primary">every discipline</span>
+              </>
+            }
             description="From routine procedures to complex surgeries, our specialists handle the full spectrum of care."
           />
         </Reveal>
 
         <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {featured.map((t, i) => {
-            const Icon = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[t.icon] ?? Icons.Activity;
+            const Icon =
+              (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[
+                t.icon
+              ] ?? Icons.Activity;
             return (
               <motion.div
                 key={t.slug}
@@ -43,7 +53,9 @@ export function Treatments() {
                     <Icon className="h-7 w-7" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold leading-snug text-foreground sm:text-base">{t.name}</h3>
+                    <h3 className="text-sm font-bold leading-snug text-foreground sm:text-base">
+                      {t.name}
+                    </h3>
                     <p className="mt-1 text-xs text-muted-foreground">
                       From ${t.startingPrice.toLocaleString()}
                     </p>
