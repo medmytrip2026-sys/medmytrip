@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight, BadgeCheck, Search } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
@@ -142,7 +143,7 @@ export function Hospitals({
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {filtered.map((h, i) => (
             <motion.article
-              key={h.name}
+              key={h.id}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
@@ -150,29 +151,31 @@ export function Hospitals({
               whileHover={{ y: -6 }}
               className="group overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-shadow hover:shadow-lift"
             >
-              <div className="relative aspect-[16/9] overflow-hidden">
-                <img
-                  src={typeof h.image === "string" ? h.image : h.image.src}
-                  alt={h.name}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute left-5 top-5 flex items-center gap-3">
-                  <div className="text-white">
-                    <h3 className="text-xl font-bold leading-tight drop-shadow transition-colors group-hover:text-primary">
-                      {h.name}
-                    </h3>
-                    <p className="flex items-center gap-1 text-sm text-white/90 transition-colors group-hover:text-primary">
-                      <MapPin className="h-3.5 w-3.5 transition-colors group-hover:text-primary" />{" "}
-                      {h.location}
-                    </p>
+              <Link href={`/hospitals/${h.id}`} className="block">
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <img
+                    src={typeof h.image === "string" ? h.image : h.image.src}
+                    alt={h.name}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute left-5 top-5 flex items-center gap-3">
+                    <div className="text-white">
+                      <h3 className="text-xl font-bold leading-tight drop-shadow transition-colors group-hover:text-primary">
+                        {h.name}
+                      </h3>
+                      <p className="flex items-center gap-1 text-sm text-white/90 transition-colors group-hover:text-primary">
+                        <MapPin className="h-3.5 w-3.5 transition-colors group-hover:text-primary" />{" "}
+                        {h.location}
+                      </p>
+                    </div>
                   </div>
+                  <span className="absolute right-5 top-5 inline-flex items-center gap-1 rounded-full bg-white/95 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary">
+                    <BadgeCheck className="h-3 w-3" /> {h.accreditation} Accredited
+                  </span>
                 </div>
-                <span className="absolute right-5 top-5 inline-flex items-center gap-1 rounded-full bg-white/95 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary">
-                  <BadgeCheck className="h-3 w-3" /> {h.accreditation} Accredited
-                </span>
-              </div>
+              </Link>
               <div className="p-6">
                 <h4 className="mb-2 text-base font-bold text-primary">{h.name}</h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">{h.description}</p>
@@ -186,12 +189,12 @@ export function Hospitals({
                     </span>
                   ))}
                 </div>
-                <a
-                  href="/#contact"
+                <Link
+                  href={`/hospitals/${h.id}`}
                   className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary transition-transform hover:translate-x-1"
                 >
-                  Enquire Now <ArrowRight className="h-4 w-4" />
-                </a>
+                  View Hospital <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
             </motion.article>
           ))}

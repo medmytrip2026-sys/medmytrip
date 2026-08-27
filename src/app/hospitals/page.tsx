@@ -31,6 +31,7 @@ export default function HospitalsPage() {
         "@type": "Hospital",
         name: h.name,
         description: h.description,
+        url: `https://healthbridge.in/hospitals/${h.id}`,
         address: {
           "@type": "PostalAddress",
           addressLocality: h.city,
@@ -61,8 +62,8 @@ export default function HospitalsPage() {
               India's most <span className="text-secondary">accredited hospitals</span>
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-white/85">
-              9 trusted partner hospitals — Medanta, Apollo, Fortis, Artemis, BLK-Max, Max Saket,
-              Manipal, Amrita and Sanar International. Filter by city, specialty or accreditation.
+              {allHospitals.length} trusted partner hospitals across Gurugram, Delhi, Noida,
+              Faridabad and Ghaziabad. Filter by city, specialty or accreditation.
             </p>
           </div>
         </section>

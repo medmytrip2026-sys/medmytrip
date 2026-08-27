@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog";
-import { doctors } from "@/data/site";
+import { doctors, hospitals } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://healthbridge.in";
@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...doctors.map((doctor) => ({
       url: `${baseUrl}/doctors/${doctor.id}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...hospitals.map((hospital) => ({
+      url: `${baseUrl}/hospitals/${hospital.id}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6,
