@@ -164,7 +164,7 @@ export function Doctors({
                 src={typeof d.image === "string" ? d.image : d.image.src}
                 alt={d.name}
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent" />
               <span className="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/95 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary shadow-soft">
@@ -261,7 +261,7 @@ export function Doctors({
                             : selectedDoctor.image.src
                         }
                         alt={selectedDoctor.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
                     <div className="rounded-2xl border border-border bg-muted/40 p-4 space-y-3">

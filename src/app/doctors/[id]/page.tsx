@@ -164,7 +164,7 @@ export default async function DoctorProfilePage({ params }: { params: Promise<{ 
                 <img
                   src={imgSrc(doctor.image)}
                   alt={doctor.name}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
               <div className="space-y-4 rounded-2xl border border-border bg-muted/40 p-5">
@@ -278,7 +278,7 @@ export default async function DoctorProfilePage({ params }: { params: Promise<{ 
                         src={imgSrc(d.image)}
                         alt={d.name}
                         loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent" />
                       <div className="absolute inset-x-4 bottom-4 text-white">
