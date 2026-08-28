@@ -1,3 +1,5 @@
+import drAnuragSaxena from "@/assets/doctors/Dr_Anurag_Saxena.png";
+
 // Neutral placeholder avatar used for doctors without a verified headshot on file.
 const DOCTOR_PLACEHOLDER_IMAGE =
   "data:image/svg+xml;utf8," +
@@ -1494,6 +1496,60 @@ export const doctors: Doctor[] = [
       "Young Neurosurgeon's Award, World Federation of Neurosurgical Societies — Medanta states he is the first and so far only recipient from India",
       "International award for his work on brain tumours, Sydney, 2001",
       "Silver Jubilee Award, NIMHANS",
+    ],
+  },
+  {
+    id: "dr-anurag-saxena-manipal-dwarka-neurosurgery",
+    name: "Dr. Anurag Saxena",
+    specialization: "Neurosurgery",
+    hospital: "Manipal Hospital, Dwarka",
+    city: "Delhi",
+    designation:
+      "Cluster Head Delhi/NCR - Department of Neurosurgery & Consultant Spine Surgeon",
+    image: drAnuragSaxena,
+    about:
+      "Dr. Anurag Saxena is Cluster Head of the Department of Neurosurgery at Manipal Hospitals, Dwarka, New Delhi, with over 20 years of experience in complex neurological conditions and advanced surgical procedures.\n\nHe earned his MBBS (gold medallist) from Devi Ahilya Vishwavidyalaya in 2002, an MS in General Surgery from the same university in 2006, and his MCh in Neurosurgery from Delhi University in 2010. He went on to complete fellowships in spine surgery, paediatric neurosurgery and general neurosurgery in the UK, including at the Royal College of Surgeons of Edinburgh.\n\nHis clinical interests span microneurosurgery, minimally invasive brain and spine surgery, hydrocephalus treatment, paediatric neurosurgery, neuro-oncology, cerebrovascular surgery, and functional and complex spine surgery. He is fluent in English and Hindi and is known for a compassionate, patient-centred approach to care.",
+    experience: "20+ years",
+    qualifications: [
+      "MBBS (Gold Medallist), Devi Ahilya Vishwavidyalaya, 2002",
+      "MS (General Surgery), Devi Ahilya Vishwavidyalaya, 2006",
+      "MCh (Neurosurgery), Delhi University, 2010",
+      "FRCS (Ed) Neurosurgery, Royal College of Surgeons of Edinburgh (UK)",
+    ],
+    fellowships: [
+      "Fellowship in Spine Surgery, Lancashire Teaching Hospital, Preston (UK)",
+      "Fellowship in Paediatric Neurosurgery, Royal Liverpool Alder Hey Children's Hospital, Liverpool (UK)",
+      "Fellowship in Neurosurgery, Royal College of Surgeons of Edinburgh (UK)",
+      "Senior Clinical Fellow, Neurosurgery, University Hospital of Wales, Cardiff (UK)",
+    ],
+    procedures: [
+      "Microneurosurgery",
+      "Minimally invasive brain surgery",
+      "Minimally invasive spine surgery",
+      "Hydrocephalus treatment (endoscopic and CSF diversion)",
+      "Paediatric neurosurgery (brain, spine and CVJ craniofacial)",
+      "Neuro-oncology (brain and spine tumours)",
+      "Cerebrovascular surgery",
+      "Functional and complex spine surgery",
+      "Motion preservation spine surgery",
+      "Endoscopic brain and spine surgery",
+      "Skull base neurosurgery",
+      "Peripheral nerve surgery",
+      "Trigeminal neuralgia and pain management",
+    ],
+    awards: [
+      "Excellence in Health Care Award in Neurosurgery, 2018",
+      "Research published as an original article in the British Journal of Neurosurgery",
+      "Neurosurgical Quiz Competition winner, DNACON 2010, Sir Ganga Ram Hospital, New Delhi",
+      "Paper award for \"Role of Endoscopic Third Ventriculostomy in Cases of Blocked Ventriculo-Peritoneal Shunt\", DNACON 2009, AIIMS New Delhi",
+      "Gold Medal, Surgical Quiz Competition, MP State Chapter, Association of Surgeons of India",
+    ],
+    workExperience: [
+      "Society of British Neurological Surgeons",
+      "Royal College of Surgeons of Edinburgh (UK)",
+      "Neurological Society of India",
+      "Delhi Neurological Association",
+      "Indian Society of Paediatric Neurosurgery",
     ],
   },
   {
