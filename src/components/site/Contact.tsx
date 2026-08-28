@@ -17,9 +17,12 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+
 export function Contact() {
   const [sent, setSent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailError, setEmailError] = useState("");
   const [form, setForm] = useState({
     name: "",
     country: "",
@@ -31,10 +34,28 @@ export function Contact() {
 
   const dialCode = getDialCode(form.country);
 
+  const validateEmail = (value: string) => {
+    if (!value.trim()) {
+      setEmailError("Email is required");
+      return false;
+    }
+    if (!EMAIL_PATTERN.test(value.trim())) {
+      setEmailError("Enter a valid email address");
+      return false;
+    }
+    setEmailError("");
+    return true;
+  };
+
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (isSubmitting) return;
+
+    if (!validateEmail(form.email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
 
     setIsSubmitting(true);
     setSent(false);
@@ -68,6 +89,7 @@ export function Contact() {
           treatment: "",
           message: "",
         });
+        setEmailError("");
 
         setTimeout(() => setSent(false), 4000);
       } else {
@@ -127,8 +149,10 @@ export function Contact() {
                 placeholder="John Smith"
               />
             </Field>
-            <Field label="Country">
+            <Field label="Country" required>
               <Select
+                required
+                name="country"
                 value={form.country}
                 onValueChange={(value) => setForm({ ...form, country: value })}
               >
@@ -138,7 +162,7 @@ export function Contact() {
                 <SelectContent className="max-h-72">
                   {countries.map((c) => (
                     <SelectItem key={c.iso2} value={c.name}>
-                      {c.name} ({c.dialCode})
+                      {c.name}
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -159,18 +183,28 @@ export function Contact() {
                 />
               </div>
             </Field>
-            <Field label="Email">
+            <Field label="Email" required>
               <input
+                required
                 type="email"
+                pattern={EMAIL_PATTERN.source}
+                title="Enter a valid email address"
                 value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className={inputCls}
+                onChange={(e) => {
+                  setForm({ ...form, email: e.target.value });
+                  if (emailError) validateEmail(e.target.value);
+                }}
+                onBlur={(e) => validateEmail(e.target.value)}
+                aria-invalid={Boolean(emailError)}
+                className={`${inputCls} ${emailError ? "border-destructive focus:border-destructive focus:ring-destructive/15" : ""}`}
                 placeholder="you@email.com"
               />
+              {emailError && <p className="mt-1 text-xs text-destructive">{emailError}</p>}
             </Field>
             <div className="sm:col-span-2">
-              <Field label="Treatment Needed">
+              <Field label="Treatment Needed" required>
                 <input
+                  required
                   value={form.treatment}
                   onChange={(e) => setForm({ ...form, treatment: e.target.value })}
                   className={inputCls}
@@ -188,8 +222,9 @@ export function Contact() {
               </Field>
             </div> */}
             <div className="sm:col-span-2">
-              <Field label="Message">
+              <Field label="Message" required>
                 <textarea
+                  required
                   rows={4}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
