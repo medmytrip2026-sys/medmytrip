@@ -5,8 +5,16 @@ import { motion } from "framer-motion";
 import { Check, Loader2, Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { contactInfo } from "@/data/site";
+import { countries, getDialCode } from "@/data/countries";
 import { Reveal } from "@/lib/motion";
 import { Toaster } from "@/components/ui/sonner";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { toast } from "sonner";
 
 export function Contact() {
@@ -20,6 +28,8 @@ export function Contact() {
     treatment: "",
     message: "",
   });
+
+  const dialCode = getDialCode(form.country);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +47,10 @@ export function Contact() {
           headers: {
             "Content-Type": "text/plain;charset=utf-8",
           },
-          body: JSON.stringify(form),
+          body: JSON.stringify({
+            ...form,
+            phone: dialCode ? `${dialCode} ${form.phone}` : form.phone,
+          }),
         },
       );
 
@@ -115,22 +128,36 @@ export function Contact() {
               />
             </Field>
             <Field label="Country">
-              <input
+              <Select
                 value={form.country}
-                onChange={(e) => setForm({ ...form, country: e.target.value })}
-                className={inputCls}
-                placeholder="e.g. United Kingdom, Canada, France"
-              />
+                onValueChange={(value) => setForm({ ...form, country: value })}
+              >
+                <SelectTrigger className={inputCls}>
+                  <SelectValue placeholder="Select your country" />
+                </SelectTrigger>
+                <SelectContent className="max-h-72">
+                  {countries.map((c) => (
+                    <SelectItem key={c.iso2} value={c.name}>
+                      {c.name} ({c.dialCode})
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </Field>
             <Field label="Phone / WhatsApp" required>
-              <input
-                required
-                type="tel"
-                value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className={inputCls}
-                placeholder="+1 XXX XXX XXXX"
-              />
+              <div className="flex gap-2">
+                <div className="flex w-16 shrink-0 items-center justify-center rounded-xl border border-border bg-muted/40 px-2 py-3 text-sm font-semibold text-foreground">
+                  {dialCode || "+__"}
+                </div>
+                <input
+                  required
+                  type="tel"
+                  value={form.phone}
+                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  className={`${inputCls} flex-1`}
+                  placeholder="XXX XXX XXXX"
+                />
+              </div>
             </Field>
             <Field label="Email">
               <input
