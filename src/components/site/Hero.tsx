@@ -118,7 +118,7 @@ export function Hero() {
       </div>
 
       {/* Floating Side Buttons */}
-      <a
+      {/* <a
         href="#contact"
         className="fixed left-0 top-1/2 z-40 -translate-y-1/2 rounded-r-lg bg-[#DC3545] p-2 text-white shadow-lg transition-transform hover:scale-105 hidden lg:flex flex-col items-center justify-center text-center w-[72px]"
       >
@@ -128,9 +128,9 @@ export function Hero() {
           <br />
           Emergency
         </span>
-      </a>
+      </a> */}
 
-      <a
+      {/* <a
         href="#contact"
         className="fixed right-0 top-1/2 z-40 -translate-y-1/2 rounded-l-lg bg-[#F39B1F] p-2 text-white shadow-lg transition-transform hover:scale-105 hidden lg:flex flex-col items-center justify-center text-center w-[72px]"
       >
@@ -140,7 +140,7 @@ export function Hero() {
           <br />
           CEO
         </span>
-      </a>
+      </a> */}
     </section>
   );
 }
