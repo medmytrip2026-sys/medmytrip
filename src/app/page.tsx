@@ -9,6 +9,7 @@ import { Treatments } from "@/components/site/Treatments";
 import { Doctors } from "@/components/site/Doctors";
 import { Hospitals } from "@/components/site/Hospitals";
 import { Testimonials } from "@/components/site/Testimonials";
+import { SatisfiedPatients } from "@/components/site/SatisfiedPatients";
 import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -78,6 +79,7 @@ export default function Home() {
           <div className="h-16" />
         </div>
         <Testimonials />
+        <SatisfiedPatients />
         <FAQ />
         <Contact />
       </main>
