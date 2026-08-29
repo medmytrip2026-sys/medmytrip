@@ -1504,8 +1504,7 @@ export const doctors: Doctor[] = [
     specialization: "Neurosurgery",
     hospital: "Manipal Hospital, Dwarka",
     city: "Delhi",
-    designation:
-      "Cluster Head Delhi/NCR - Department of Neurosurgery & Consultant Spine Surgeon",
+    designation: "Cluster Head Delhi/NCR - Department of Neurosurgery & Consultant Spine Surgeon",
     image: drAnuragSaxena,
     about:
       "Dr. Anurag Saxena is Cluster Head of the Department of Neurosurgery at Manipal Hospitals, Dwarka, New Delhi, with over 20 years of experience in complex neurological conditions and advanced surgical procedures.\n\nHe earned his MBBS (gold medallist) from Devi Ahilya Vishwavidyalaya in 2002, an MS in General Surgery from the same university in 2006, and his MCh in Neurosurgery from Delhi University in 2010. He went on to complete fellowships in spine surgery, paediatric neurosurgery and general neurosurgery in the UK, including at the Royal College of Surgeons of Edinburgh.\n\nHis clinical interests span microneurosurgery, minimally invasive brain and spine surgery, hydrocephalus treatment, paediatric neurosurgery, neuro-oncology, cerebrovascular surgery, and functional and complex spine surgery. He is fluent in English and Hindi and is known for a compassionate, patient-centred approach to care.",
@@ -1541,7 +1540,7 @@ export const doctors: Doctor[] = [
       "Excellence in Health Care Award in Neurosurgery, 2018",
       "Research published as an original article in the British Journal of Neurosurgery",
       "Neurosurgical Quiz Competition winner, DNACON 2010, Sir Ganga Ram Hospital, New Delhi",
-      "Paper award for \"Role of Endoscopic Third Ventriculostomy in Cases of Blocked Ventriculo-Peritoneal Shunt\", DNACON 2009, AIIMS New Delhi",
+      'Paper award for "Role of Endoscopic Third Ventriculostomy in Cases of Blocked Ventriculo-Peritoneal Shunt", DNACON 2009, AIIMS New Delhi',
       "Gold Medal, Surgical Quiz Competition, MP State Chapter, Association of Surgeons of India",
     ],
     workExperience: [
