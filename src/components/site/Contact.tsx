@@ -20,7 +20,10 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="mx-auto max-w-5xl px-4 pt-2 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24 scroll-mt-24">
+    <section
+      id="contact"
+      className="mx-auto max-w-5xl px-4 pt-2 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24 scroll-mt-24"
+    >
       <Reveal>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-xl font-extrabold tracking-tight text-foreground sm:text-2xl">

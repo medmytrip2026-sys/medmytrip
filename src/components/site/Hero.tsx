@@ -153,15 +153,17 @@ export function Hero() {
               A mission of hope, healing, and health
             </p>
             <p className="mt-1.5 text-sm text-slate-600 sm:text-base">
-              MedMyTrip guides international patients through every step of treatment in India — from
-              first enquiry and doctor selection to travel, recovery and follow-up care.
+              MedMyTrip guides international patients through every step of treatment in India —
+              from first enquiry and doctor selection to travel, recovery and follow-up care.
             </p>
 
             {/* Stats */}
             <div className="mt-4 flex flex-wrap items-center gap-x-7 gap-y-3 sm:gap-x-9">
               {stats.map((stat, i) => (
                 <div key={stat.label} className="flex items-center gap-4">
-                  {i > 0 && <div className="hidden h-10 w-px bg-slate-300/70 sm:block" aria-hidden />}
+                  {i > 0 && (
+                    <div className="hidden h-10 w-px bg-slate-300/70 sm:block" aria-hidden />
+                  )}
                   <div className="flex items-center gap-3">
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blue-50 text-[#0066CC]">
                       <stat.icon className="h-4.5 w-4.5" />
@@ -195,7 +197,10 @@ export function Hero() {
               Share your details — our medical team responds within 24 hours.
             </p>
 
-            <form onSubmit={onSubmit} className="mt-3 grid grid-cols-1 gap-x-3 gap-y-2.5 sm:grid-cols-2">
+            <form
+              onSubmit={onSubmit}
+              className="mt-3 grid grid-cols-1 gap-x-3 gap-y-2.5 sm:grid-cols-2"
+            >
               <HeroField label="Full Name" required>
                 <input
                   required
