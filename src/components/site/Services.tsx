@@ -24,9 +24,7 @@ export function Services() {
       <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => {
           const Icon =
-            (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[
-              s.icon
-            ] ?? Icons.CheckCircle2;
+            (Icons as unknown as Record<string, Icons.LucideIcon>)[s.icon] ?? Icons.CheckCircle2;
           return (
             <motion.div
               key={s.title}
