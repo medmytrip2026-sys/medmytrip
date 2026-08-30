@@ -317,7 +317,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4"
+          className="mt-5 hidden gap-3 sm:grid sm:grid-cols-4"
         >
           {[
             { icon: CalendarCheck, title: "Book Appointment" },
