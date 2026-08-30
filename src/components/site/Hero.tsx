@@ -50,8 +50,8 @@ export function Hero() {
 
   const validateEmail = (value: string) => {
     if (!value.trim()) {
-      setEmailError("Email is required");
-      return false;
+      setEmailError("");
+      return true;
     }
     if (!EMAIL_PATTERN.test(value.trim())) {
       setEmailError("Enter a valid email address");
@@ -76,7 +76,7 @@ export function Hero() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxCNkH4708AvHPucx2fwvslDw6OIX2JnIkw-HazFMLV7T0sDBTLMfV0p55fn_Sp06k/exec",
+        "https://script.google.com/macros/s/AKfycbya30C97V-KZnpImKw09Z7AXB3IZOfYa2_ay073c9YbAgxm3dc9g2JtRXxQIvIPYqvr/exec",
         {
           method: "POST",
           headers: {
@@ -247,9 +247,8 @@ export function Hero() {
                 </div>
               </HeroField>
 
-              <HeroField label="Email" required>
+              <HeroField label="Email">
                 <input
-                  required
                   type="email"
                   pattern={EMAIL_PATTERN.source}
                   title="Enter a valid email address"
@@ -267,9 +266,8 @@ export function Hero() {
               </HeroField>
 
               <div className="sm:col-span-2">
-                <HeroField label="Treatment Needed" required>
+                <HeroField label="Treatment Needed">
                   <input
-                    required
                     value={form.treatment}
                     onChange={(e) => setForm({ ...form, treatment: e.target.value })}
                     className={inputCls}
@@ -279,9 +277,8 @@ export function Hero() {
               </div>
 
               <div className="sm:col-span-2">
-                <HeroField label="Message" required>
+                <HeroField label="Message">
                   <textarea
-                    required
                     rows={1}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
