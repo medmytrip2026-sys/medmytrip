@@ -278,7 +278,7 @@ export const doctors: Doctor[] = [
     image: "/doctors/dr-naresh-kumar-panda.webp",
     about:
       "Dr. Naresh Kumar Panda is Senior Director of the Department of ENT at Max Hospital, Mohali. Max Healthcare records 37 years as a consultant ENT surgeon at PGIMER, Chandigarh, 20 of them as Head of the Department, and notes that he is a former Dean Academic of PGIMER.\n\nHis published speciality interests are cochlear implantation and other otological procedures, head and neck surgery including thyroid and parotid surgery, endoscopic sinus surgery and transoral robotic surgery. Max records more than 600 cochlear implant operations over the last 20 years, and more than 425 publications in national and international journals.",
-    experience: "37+ years",
+    experience: "37+ year",
     qualifications: [
       "MBBS — MKCG Medical College, Orissa (1982)",
       "MS (Otolaryngology) — PGIMER, Chandigarh (1987)",
