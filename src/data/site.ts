@@ -2244,7 +2244,15 @@ export const doctors: Doctor[] = [
       "Diploma in Reproductive Medicine & ART — Kiel, Germany",
       "Diploma in Endoscopy — Clermont, France",
     ],
-    procedures: ["IVF", "ICSI", "Donor egg IVF", "Surrogacy", "PGS/PGD", "Endoscopy", "PRP therapy"],
+    procedures: [
+      "IVF",
+      "ICSI",
+      "Donor egg IVF",
+      "Surrogacy",
+      "PGS/PGD",
+      "Endoscopy",
+      "PRP therapy",
+    ],
     awards: ["Dr. APJ Abdul Kalam Health Award (2023)"],
   },
 
@@ -2303,7 +2311,9 @@ export const doctors: Doctor[] = [
       "Denture characterisation",
       "Obturator prosthesis for maxillary defects",
     ],
-    awards: ["1st Position, Characterisation of Dentures — World Congress on Prosthodontics, New Delhi"],
+    awards: [
+      "1st Position, Characterisation of Dentures — World Congress on Prosthodontics, New Delhi",
+    ],
     workExperience: [
       "Associate Professor — 7 years at a dental college",
       "Consultant, Fortis Jesaram, Karol Bagh",
